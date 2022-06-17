@@ -1,0 +1,15 @@
+
+import replace from "gulp-replace";
+import plumber from "gulp-plumber"; // обработка ошибок
+import notify from "gulp-notify"; // сообщения об ошибках
+import browsersync from "browser-sync"; // Локальный сервер
+import newer from "gulp-newer"; // Проверка обновлений
+
+
+export const plugins = {
+  replace: replace, // замена @img на img/ в проде
+  plumber: plumber,
+  notify: notify,
+  browsersync: browsersync,
+  newer: newer
+}

@@ -1,0 +1,4 @@
+// линия, разделяющая секции
+@mixin divider {
+  border-bottom: 0.3px solid rgba(70, 163, 88,0.5);
+}

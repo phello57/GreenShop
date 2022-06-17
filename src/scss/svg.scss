@@ -1,0 +1,87 @@
+.svg {
+  // === HEADER ===
+  &__logo {
+    width: 150px;
+    height: 34px;
+  }
+  &__search {
+    width: 20px;
+    height: 20px;
+  }
+  &__market-cart {
+    width: 29px;
+    height: 24px;
+  }
+  &__login {
+    width: 20px;
+    height: 20px;
+  }
+  // === / HEADER ===
+
+  // === FOOTER ===
+  &__footer-flower1 {
+    width: 60px;
+    height: 116px;
+  }
+  &__footer-flower2 {
+    width: 70px;
+    height: 116px;
+  }
+  &__footer-flower3 {
+    width: 80px;
+    height: 116px;
+  }
+  &__location {
+    width: 22px;
+    height: 27px;
+  }
+  &__accept {
+    width: 25px;
+    height: 25px;
+  }
+  &__call {
+    width: 16px;
+    height: 16px;
+  }
+  &__facebook {
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 16px;
+  }
+  &__instagram {
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+  }
+  &__twitter {
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 13px;
+  }
+  &__linkedIn {
+    position: absolute;
+    bottom: 0;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 14px;
+  }
+  &__union {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+  }
+  // === / FOOTER ===
+}
