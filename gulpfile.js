@@ -18,7 +18,6 @@ import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
 import { images } from "./gulp/tasks/images.js";
 import { svgSprive } from "./gulp/tasks/svgSprive.js";
-import { stylelint } from "./gulp/tasks/stylelint.js";
 import { otfToTtf,ttfToWoff,fontsStyle } from "./gulp/tasks/fonts.js";
 
 // Наблюдатель за изменениями в файлах
@@ -32,7 +31,7 @@ function watcher() {
 };
 
 // export { svgSprive }
-export { stylelint }
+
 // Шрифты
 const fonts = gulp.series(otfToTtf,ttfToWoff,fontsStyle)
 // Построение сценариев выполнения задач 

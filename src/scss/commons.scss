@@ -1,43 +1,52 @@
 body {
-  font-family: 'CeraPro', sans-serif;
-  font-weight: $fw-regular;
   color: $color-primary-text;
+  font-weight: $fw-regular;
   font-size: 16px;
+  font-family: CeraPro, sans-serif;
 }
+
 .section-outer {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 @keyframes slide-animation {
-  0% {opacity: 0.4;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
+
 .active {
   &__link {
-  text-shadow: 0 0 .9px $color-primary-text,0 0 .9px $color-primary-text;
-  border-bottom: 3px solid $color-main;
+    text-shadow: 0 0 0.9px $color-primary-text, 0 0 0.9px $color-primary-text;
+    border-bottom: 3px solid $color-main;
   }
+
   &__slide {
-    visibility: visible !important;
     position: static !important;
-    animation-duration: 2s;
+    visibility: visible !important;
     animation-name: slide-animation;
+    animation-duration: 2s;
   }
 }
+
 .primary-btn {
-  font-family: 'CeraPro';
   display: flex;
   align-items: center;
-  border: none;
-  font-size: 16px;
-  border-radius: 6px;
-  font-weight: 500;
-  background-color: $color-main;
   height: 35px;
-  padding: 0 17px 0 17px;
+  padding: 0 17px;
   color: #fff;
   font-weight: $fw-medium;
+  font-size: 16px;
+  font-family: CeraPro;
+  background-color: $color-main;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
   &__text {
     padding-left: 3px;
   }

@@ -16,7 +16,6 @@ export const html = () => {
     pretty: true,
     verbose: true,
   }))
-  .pipe(app.plugins.replace(/@images\//g,'images/'))
   // уменьшает вес изображений и меняет формат
   .pipe(webpHtmlNosvg())
 
@@ -40,9 +39,9 @@ export const html = () => {
   )
   // Раскомментировать для удаления пробелов в конечном html
 
-  // .pipe(htmlmin({
-  //   collapseWhitespace: true
-  // }))
+  .pipe(htmlmin({
+    collapseWhitespace: true
+  }))
   .pipe(app.gulp.dest("dist"))
   .pipe(app.plugins.browsersync.stream())
 }

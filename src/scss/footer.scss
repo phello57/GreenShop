@@ -4,138 +4,156 @@
 
 .subscribe {
   display: flex;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   border-bottom: 1px solid $color-main;
+
   &__cardWhy {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    position: relative;
     width: 205px;
-    padding: 0 23px 0 23px;
-    margin: 20px 0 20px 0;
-    border-right: 1px solid rgba(70, 163, 88, 0.1);;
+    margin: 20px 0;
+    padding: 0 23px;
+    border-right: 1px solid rgb(70 163 88 / 10%);
   }
+
   &__title {
+    padding-top: 27px;
+    padding-bottom: 9px;
     font-weight: 700;
     font-size: 17px;
     line-height: 16px;
-    padding-bottom: 9px;
-    padding-top: 27px;
   }
+
   &__paragraf {
     width: 204px;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
   }
+
   &__background {
     position: absolute;
-    left: 20px;
     bottom: 100px;
+    left: 20px;
     width: 74px;
     height: 74px;
+    background: rgb(70 163 88 / 13%);
     border-radius: 50%;
-    background: rgba(70, 163, 88, 0.13);
   }
+
   &__form-wrapper {
     width: 446px;
-    padding: 0 23px 0 23px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
+    padding: 0 23px;
   }
-  
 }
+
 .form-subscribe {
-  display: flex;
   position: relative;
+  display: flex;
+
   &__title {
+    padding-top: 27px;
+    padding-bottom: 10px;
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
-    padding-bottom: 10px;
-    padding-top: 27px;
   }
+
   &__input {
     width: 273px;
     height: 35px;
-    border: none;
-    background-color: #fff;
-    border-radius: 4px;
     padding-left: 10px;
+    background-color: #fff;
+    border: none;
     border: 2px solid #fff;
+    border-radius: 4px;
   }
+
   &__text {
+    padding-top: 17px;
     font-weight: 400;
     font-size: 13px;
     line-height: 22px;
-    padding-top: 17px;
   }
+
   &__btn {
     position: absolute;
-    right: 0px;
-    font-family: 'CeraPro';
+    right: 0;
     display: flex;
     align-items: center;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    background-color: $color-main;
     height: 37px;
-    padding: 0 17px 0 17px;
+    padding: 0 17px;
     color: #fff;
+    font-weight: 500;
     font-weight: $fw-medium;
+    font-size: 16px;
+    font-family: CeraPro;
+    background-color: $color-main;
+    border: none;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
   }
 }
+
 .form-subscribe__input::placeholder {
   color: #212529;
   opacity: 0.4;
 }
+
 .form-subscribe__input:focus {
   border: 1px solid $color-main;
 }
+
 .form-subscribe__input:active {
   border: 1px solid $color-main;
 }
+
 .our-contacts {
-  height: 88px;
-  background: rgba(70, 163, 88, 0.1);
   display: flex;
+  height: 88px;
+  background: rgb(70 163 88 / 10%);
+
   &__card-wrapper {
-    width: 205px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    padding: 0 23px 0 23px;
-    margin: 20px 0 20px 0;
+    justify-content: flex-start;
+    width: 205px;
+    margin: 20px 0;
+    padding: 0 23px;
   }
+
   &__text {
     width: 176px;
+    padding-left: 10px;
     font-weight: 400;
     font-size: 14px;
     line-height: 22px;
-    padding-left: 10px;
   }
 }
+
 .footer-menu {
   display: flex;
-  background-color: #FBFBFB;
-  border-top: 1px solid $color-main;
   height: 246px;
-  
+  background-color: #fbfbfb;
+  border-top: 1px solid $color-main;
+
   &__list {
     width: 205px;
-    padding: 0 23px 0 23px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
+    padding: 0 23px;
   }
+
   &__title {
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
-    margin-bottom: 20px;
     text-decoration: none;
   }
+
   &__href {
     font-weight: 400;
     font-size: 14px;
@@ -143,25 +161,27 @@
     text-decoration: none;
   }
 
-  &__socials { 
+  &__socials {
     display: flex;
     justify-content: center;
-
   }
 
   &__socials-and-pay {
     width: 205px;
-    padding: 0 23px 0 23px;
-    margin: 20px 0 20px 0;
+    margin: 20px 0;
+    padding: 0 23px;
   }
+
   &__social-wrapper {
-    margin-right: 10px;
     position: relative;
     width: 30px;
     height: 30px;
-    border-radius: 4px;border: 1px solid rgba(70, 163, 88, 0.2);
+    margin-right: 10px;
+    border: 1px solid rgb(70 163 88 / 20%);
+    border-radius: 4px;
   }
 }
+
 .copyright-wrapper {
   display: flex;
   justify-content: center;
