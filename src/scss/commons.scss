@@ -19,6 +19,20 @@ body {
   }
 }
 
+h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 16px;
+}
+
+h4 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .active {
   &__link {
     text-shadow: 0 0 0.9px $color-primary-text, 0 0 0.9px $color-primary-text;
@@ -30,6 +44,11 @@ body {
     visibility: visible !important;
     animation-name: slide-animation;
     animation-duration: 2s;
+  }
+
+  &__pagination {
+    color: #fff;
+    background: $color-main;
   }
 }
 

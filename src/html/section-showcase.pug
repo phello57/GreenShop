@@ -1,5 +1,5 @@
-section.section-outer.shop
-  .shop__inner
+section.section-outer.showcase
+  .showcase__inner
     .filter-list
       .category
         .category__title Categories
@@ -48,59 +48,75 @@ section.section-outer.shop
         div.category__wrapper
           .category__item Large
           .category__count (78)
-      div
-        //- img(alt="" src="images/SuperSaleBanner.png")
+      div.sell-out-card
+        img.sell-out-card__img-sale(title="Super sale" alt="Super Sale" src="images/SuperSale.png")
+        div.sell-out-card__text UP TO 75% OFF
+        img.sell-out-card__img-flower(title="Super sale" alt="Super Sale" src="images/SuperSaleImg1.png")
+
     div.showcase__wrapper
       .showcase__sorting-wrapper
-        div
-          div All plants
-          div New Arrivals
-          div Sale
+        div.showcase__categories
+          a(href="#")  All plants
+          a(href="#")  New Arrivals
+          a(href="#")  Sale
         div.showcase__sorting
           div Short by:  Default sorting
           span
       div.showcase__slots-wrapper
         .slot__wrapper
-          img.slot__image(alt="", src="images/content/image1.png")
+          img.slot__image(title="Barberton Daisy" alt="Цветок Barberton Daisy", src="images/content/image1.png")
           .slot__name Barberton Daisy
           .slot__cost $217.00
         .slot__wrapper
-          img.slot__image(alt="", src="images/content/image2.png")
+          img.slot__image(title="Цветок ngel Wing Begonia" alt="Цветок Angel Wing Begonia", src="images/content/image2.png")
           .slot__name Angel Wing Begonia
           .slot__cost $37.00
         .slot__wrapper
-          img.slot__image(alt="", src="images/content/image3.png")
+          img.slot__image(title="Цветок African Violet" alt="Цветок African Violet", src="images/content/image3.png")
           .slot__name African Violet
           .slot__cost $52.00
           span.slot__sale $52.00
           span.slot__card-sale 13% OFF
       div.showcase__slots-wrapper
         .slot__wrapper
-          img.slot__image(alt="" src="images/content/image4.png")
+          img.slot__image(title="Цветок Beach Spider Lily" alt="Цветок Beach Spider Lily" src="images/content/image4.png")
           .slot__name Beach Spider Lily
           .slot__cost $217.00
         .slot__wrapper
-          img.slot__image(alt="" src="images/content/image5.png")
+          img.slot__image(title="Цветок Blushing Bromeliad" alt="Цветок Blushing Bromeliad" src="images/content/image5.png")
           .slot__name Blushing Bromeliad
           .slot__cost $137.00
         .slot__wrapper
-          img.slot__image(alt="" src="images/content/image6.png")
+          img.slot__image(title="Цветок Aluminum Plant" alt="Цветок Aluminum Plant" src="images/content/image6.png")
           .slot__name Aluminum Plant
           .slot__cost $352.00
           span.slot__sale $52.00
       div.showcase__slots-wrapper
         .slot__wrapper
-          img.slot__image(alt="" src="images/content/image7.png")
+          img.slot__image(title="Цветок Bird's Nest Fern" alt="Цветок Bird's Nest Fern" src="images/content/image7.png")
           .slot__name Bird's Nest Fern
           .slot__cost $217.00
         .slot__wrapper
-          img.slot__image(alt="" src="images/content/image8.png")
+          img.slot__image(title="Цветок Broadleaf Lady Palm" alt="Цветок Broadleaf Lady Palm" src="images/content/image8.png")
           .slot__name Broadleaf Lady Palm
           .slot__cost $37.00
         .slot__wrapper
-          img.slot__image(alt="" src="images/content/image9.png")
+          img.slot__image(title="Цветок Chinese Evergreen" alt="Цветок Chinese Evergreen" src="images/content/image9.png")
           .slot__name Chinese Evergreen
           .slot__cost $552.00
           span.slot__sale $52.00
+      .pagination
+        div.pagination__item
+          a.pagination__link.active__pagination(href="#") 1
+        div.pagination__item
+          a.pagination__link(href="#") 2
+        div.pagination__item
+          a.pagination__link(href="#") 3
+        div.pagination__item
+          a.pagination__link(href="#") 4
+        button.pagination__btn
+          svg.svg__pagination-arrow-right                               
+            use(xlink:href="images/icons/icons.svg#pagination-arrow-right")
+
 
 

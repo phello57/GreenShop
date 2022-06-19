@@ -34,7 +34,7 @@ function watcher() {
 
 // Шрифты
 const fonts = gulp.series(otfToTtf,ttfToWoff,fontsStyle)
-// Построение сценариев выполнения задач 
+// Построение сценариев выполнения задач
 const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images,svgSprive));
 // *series выполняет функции последовательно
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
