@@ -7,7 +7,7 @@ import newer from "gulp-newer"; // Проверка обновлений
 
 
 export const plugins = {
-  replace: replace, // замена @img на img/ в проде
+  replace: replace,
   plumber: plumber,
   notify: notify,
   browsersync: browsersync,

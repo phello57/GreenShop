@@ -5,6 +5,104 @@ body {
   font-family: CeraPro, sans-serif;
 }
 
+.disable {
+  position: absolute !important;
+  visibility: hidden !important;
+}
+
+.active {
+  &__burger-menu {
+    visibility: visible !important;
+    animation-name: inputOpen;
+    animation-duration: 0.5s;
+  }
+
+  &__input-open {
+    position: relative !important;
+    visibility: visible !important;
+    animation-name: inputOpen;
+    animation-duration: 2s;
+  }
+
+  &__link {
+    text-shadow: 0 0 0.9px $color-primary-text, 0 0 0.9px $color-primary-text;
+    border-bottom: 3px solid $color-main;
+  }
+
+  &__slide {
+    position: static !important;
+    visibility: visible !important;
+    animation-name: slide-animation;
+    animation-duration: 2s;
+  }
+
+  &__icons-inner-img {
+    visibility: visible !important;
+    animation-name: iconsUp;
+    animation-duration: 0.7s;
+  }
+
+  &__pagination {
+    color: #fff;
+    background: $color-main;
+  }
+
+  &__showcase-category {
+    color: $color-main;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 40px;
+  }
+
+  &__showcase-sort {
+    font-weight: 700;
+    color: $color-main;
+    padding-bottom: 4px;
+    border-bottom: 2px solid $color-main;
+  }
+}
+
+.btn {
+  // Кнопка открытия инпута
+  &__search-input-open {
+    border: none;
+    background-color: white;
+    border-bottom: 3px solid #fff;
+    cursor: pointer;
+  }
+  // кнопка поиска по запросу
+  &__search-find-request {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  &__market-cart {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__hamburger-menu {
+    visibility: hidden;
+    position: absolute;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  &__hamburger-exit {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+}
+
 .section-outer {
   max-width: 1200px;
   margin: 0 auto;
@@ -33,29 +131,10 @@ h4 {
   line-height: 24px;
 }
 
-.active {
-  &__link {
-    text-shadow: 0 0 0.9px $color-primary-text, 0 0 0.9px $color-primary-text;
-    border-bottom: 3px solid $color-main;
-  }
-
-  &__slide {
-    position: static !important;
-    visibility: visible !important;
-    animation-name: slide-animation;
-    animation-duration: 2s;
-  }
-
-  &__pagination {
-    color: #fff;
-    background: $color-main;
-  }
-}
-
 .primary-btn {
   display: flex;
   align-items: center;
-  height: 35px;
+  height: 33px;
   padding: 0 17px;
   color: #fff;
   font-weight: $fw-medium;
@@ -65,8 +144,15 @@ h4 {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  border: 3px solid $color-main;
 
   &__text {
     padding-left: 3px;
+  }
+
+  &:hover {
+    background-color: $color-hover;
+    border: 3px solid $color-hover;
+    transition: $transition;
   }
 }

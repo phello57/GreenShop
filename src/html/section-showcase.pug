@@ -3,108 +3,223 @@ section.section-outer.showcase
     .filter-list
       .category
         .category__title Categories
-        .category__wrapper
+        a.category__wrapper.active__showcase-category(href="#")
           .category__item House Plants
           .category__count (33) 
-        .category__wrapper
+        a.category__wrapper(href="#")
           .category__item Potter Plants
           .category__count (12) 
-        .category__wrapper
+        a.category__wrapper(href="#")
           .category__item Seeds
           .category__count (65) 
-        .category__wrapper
+        a.category__wrapper(href="#")
           .category__item Small Plants
           .category__count (39) 
-        .category__wrapper
+        a.category__wrapper(href="#")
           .category__item Big Plants
           .category__count (22) 
-        .category__wrapper
+        a.category__wrapper(href="#")
           .category__item Succulents
           .category__count (22) 
-        .category__wrapper
+        a.category__wrapper(href="#")
           .category__item Trerrariums
           .category__count (22) 
-        .category__wrapper
+        a.category__wrapper(href="#")
           .category__item Gardering
           .category__count (22)
-        .category__wrapper
+        a.category__wrapper(href="#")
           .category__item Accessories
           .category__count (22)
       .price-range
         .category__title Price range
-        span
-        input.price-range__input(type="range" min="1" max="1500" value="30"  id="#price")
-        div Price:
-        span
+        input.styled-slider.slider-progress(type="range" min="39" max="1500" value="1500"  id="#price")
+        div.price-range__cost-wrapper
+          .price-range__text Price:
+          .price-range__vie-cost
         button.primary-btn Filter
-      div.category
-        div.category__title Size
-        div.category__wrapper
+      .category
+        .category__title Size
+        a.category__wrapper(href="#")
           .category__item Small
           .category__count (119)
-        div.category__wrapper
+        a.category__wrapper(href="#")
           .category__item Medium
           .category__count (86)
-        div.category__wrapper
+        a.category__wrapper(href="#")
           .category__item Large
           .category__count (78)
-      div.sell-out-card
-        img.sell-out-card__img-sale(title="Super sale" alt="Super Sale" src="images/SuperSale.png")
-        div.sell-out-card__text UP TO 75% OFF
-        img.sell-out-card__img-flower(title="Super sale" alt="Super Sale" src="images/SuperSaleImg1.png")
+      .sell-out-card
+        img.sell-out-card__img-sale( alt="Super Sale" src="images/SuperSale.png")
+        .sell-out-card__text UP TO 75% OFF
+        img.sell-out-card__img-flower( alt="Super Sale" src="images/SuperSaleImg1.png")
 
-    div.showcase__wrapper
+    .showcase__wrapper
       .showcase__sorting-wrapper
-        div.showcase__categories
-          a(href="#")  All plants
+        .showcase__categories
+          a.active__showcase-sort(href="#")  All plants
           a(href="#")  New Arrivals
           a(href="#")  Sale
-        div.showcase__sorting
-          div Short by:  Default sorting
-          span
-      div.showcase__slots-wrapper
+        .showcase__sorting
+          .showcase__sorting-text Short by:
+          form.showcase__sorting-item(type="" name="sorting")
+            select.showcase__sorting-select(name="sorting")
+              option.showcase__sorting-option(value="") Default sorting
+              option.showcase__sorting-option(value="") Any sorting
+              option.showcase__sorting-option(value="") Any sorting 
+
+      .showcase__slots-wrapper
         .slot__wrapper
-          img.slot__image(title="Barberton Daisy" alt="Цветок Barberton Daisy", src="images/content/image1.png")
-          .slot__name Barberton Daisy
+          a.slot__image-wrapper(href="#")
+            img.slot__image(alt="Цветок Barberton Daisy", src="images/content/image1.png")
+          a.slot__name(href="#") Barberton Daisy 
           .slot__cost $217.00
+
+          form.form__icons-inner-img(action="")
+            .icons-inner-img
+              .icons-inner-img__item
+                svg.svg__market-cart
+                  use(xlink:href="images/icons/icons.svg#market-cart")
+              .icons-inner-img__item
+                svg.svg__like
+                  use(xlink:href="images/icons/icons.svg#like")
+              a.icons-inner-img__item(href="")
+                svg.svg__search
+                  use(xlink:href="images/icons/icons.svg#search") 
+
         .slot__wrapper
-          img.slot__image(title="Цветок ngel Wing Begonia" alt="Цветок Angel Wing Begonia", src="images/content/image2.png")
-          .slot__name Angel Wing Begonia
+          a.slot__image-wrapper(href="#")
+            img.slot__image(alt="Цветок Angel Wing Begonia", src="images/content/image2.png")
+          a.slot__name(href="#") Angel Wing Begonia
           .slot__cost $37.00
+          form(action="")
+            div.icons-inner-img
+              div.icons-inner-img__item
+                svg.svg__market-cart
+                  use(xlink:href="images/icons/icons.svg#market-cart")
+              div.icons-inner-img__item.icons-inner-img__like
+                svg.svg__like
+                  use(xlink:href="images/icons/icons.svg#like")
+              a.icons-inner-img__item(href="")
+                svg.svg__search
+                  use(xlink:href="images/icons/icons.svg#search") 
         .slot__wrapper
-          img.slot__image(title="Цветок African Violet" alt="Цветок African Violet", src="images/content/image3.png")
-          .slot__name African Violet
+          a.slot__image-wrapper(href="#")
+            img.slot__image(alt="Цветок African Violet", src="images/content/image3.png")
+          a.slot__name(href="#") African Violet
           .slot__cost $52.00
           span.slot__sale $52.00
           span.slot__card-sale 13% OFF
-      div.showcase__slots-wrapper
+          form(action="")
+            div.icons-inner-img
+              div.icons-inner-img__item
+                svg.svg__market-cart
+                  use(xlink:href="images/icons/icons.svg#market-cart")
+              div.icons-inner-img__item.icons-inner-img__like
+                svg.svg__like
+                  use(xlink:href="images/icons/icons.svg#like")
+              a.icons-inner-img__item(href="")
+                svg.svg__search
+                  use(xlink:href="images/icons/icons.svg#search") 
+      .showcase__slots-wrapper
         .slot__wrapper
-          img.slot__image(title="Цветок Beach Spider Lily" alt="Цветок Beach Spider Lily" src="images/content/image4.png")
-          .slot__name Beach Spider Lily
+          a.slot__image-wrapper(href="#")
+            img.slot__image(alt="Цветок Beach Spider Lily" src="images/content/image4.png")
+          a.slot__name(href="#") Beach Spider Lily
           .slot__cost $217.00
+          form(action="")
+            div.icons-inner-img
+              div.icons-inner-img__item
+                svg.svg__market-cart
+                  use(xlink:href="images/icons/icons.svg#market-cart")
+              div.icons-inner-img__item.icons-inner-img__like
+                svg.svg__like
+                  use(xlink:href="images/icons/icons.svg#like")
+              a.icons-inner-img__item(href="")
+                svg.svg__search
+                  use(xlink:href="images/icons/icons.svg#search") 
         .slot__wrapper
-          img.slot__image(title="Цветок Blushing Bromeliad" alt="Цветок Blushing Bromeliad" src="images/content/image5.png")
-          .slot__name Blushing Bromeliad
+          a.slot__image-wrapper(href="#")
+            img.slot__image(alt="Цветок Blushing Bromeliad" src="images/content/image5.png")
+          a.slot__name(href="#") Blushing Bromeliad
           .slot__cost $137.00
+          form(action="")
+            div.icons-inner-img
+              div.icons-inner-img__item
+                svg.svg__market-cart
+                  use(xlink:href="images/icons/icons.svg#market-cart")
+              div.icons-inner-img__item.icons-inner-img__like
+                svg.svg__like
+                  use(xlink:href="images/icons/icons.svg#like")
+              a.icons-inner-img__item(href="")
+                svg.svg__search
+                  use(xlink:href="images/icons/icons.svg#search") 
         .slot__wrapper
-          img.slot__image(title="Цветок Aluminum Plant" alt="Цветок Aluminum Plant" src="images/content/image6.png")
-          .slot__name Aluminum Plant
+          a.slot__image-wrapper(href="#")
+            img.slot__image(alt="Цветок Aluminum Plant" src="images/content/image6.png")
+          a.slot__name(href="#") Aluminum Plant
           .slot__cost $352.00
           span.slot__sale $52.00
-      div.showcase__slots-wrapper
+          form(action="")
+            div.icons-inner-img
+              div.icons-inner-img__item
+                svg.svg__market-cart
+                  use(xlink:href="images/icons/icons.svg#market-cart")
+              div.icons-inner-img__item.icons-inner-img__like
+                svg.svg__like
+                  use(xlink:href="images/icons/icons.svg#like")
+              a.icons-inner-img__item(href="")
+                svg.svg__search
+                  use(xlink:href="images/icons/icons.svg#search") 
+      .showcase__slots-wrapper
         .slot__wrapper
-          img.slot__image(title="Цветок Bird's Nest Fern" alt="Цветок Bird's Nest Fern" src="images/content/image7.png")
-          .slot__name Bird's Nest Fern
+          a.slot__image-wrapper(href="#")
+            img.slot__image(alt="Цветок Bird's Nest Fern" src="images/content/image7.png")
+          a.slot__name(href="#") Bird's Nest Fern
           .slot__cost $217.00
+          form(action="")
+            div.icons-inner-img
+              div.icons-inner-img__item
+                svg.svg__market-cart
+                  use(xlink:href="images/icons/icons.svg#market-cart")
+              div.icons-inner-img__item.icons-inner-img__like
+                svg.svg__like
+                  use(xlink:href="images/icons/icons.svg#like")
+              a.icons-inner-img__item(href="")
+                svg.svg__search
+                  use(xlink:href="images/icons/icons.svg#search") 
         .slot__wrapper
-          img.slot__image(title="Цветок Broadleaf Lady Palm" alt="Цветок Broadleaf Lady Palm" src="images/content/image8.png")
-          .slot__name Broadleaf Lady Palm
+          a.slot__image-wrapper(href="#")
+            img.slot__image(alt="Цветок Broadleaf Lady Palm" src="images/content/image8.png")
+          a.slot__name(href="#") Broadleaf Lady Palm
           .slot__cost $37.00
+          form(action="")
+            div.icons-inner-img
+              div.icons-inner-img__item
+                svg.svg__market-cart
+                  use(xlink:href="images/icons/icons.svg#market-cart")
+              div.icons-inner-img__item.icons-inner-img__like
+                svg.svg__like
+                  use(xlink:href="images/icons/icons.svg#like")
+              a.icons-inner-img__item(href="")
+                svg.svg__search
+                  use(xlink:href="images/icons/icons.svg#search") 
         .slot__wrapper
-          img.slot__image(title="Цветок Chinese Evergreen" alt="Цветок Chinese Evergreen" src="images/content/image9.png")
-          .slot__name Chinese Evergreen
+          a.slot__image-wrapper(href="#")
+            img.slot__image(alt="Цветок Chinese Evergreen" src="images/content/image9.png")
+          a.slot__name(href="#") Chinese Evergreen
           .slot__cost $552.00
           span.slot__sale $52.00
+          form(action="")
+            div.icons-inner-img
+              div.icons-inner-img__item
+                svg.svg__market-cart
+                  use(xlink:href="images/icons/icons.svg#market-cart")
+              div.icons-inner-img__item.icons-inner-img__like
+                svg.svg__like
+                  use(xlink:href="images/icons/icons.svg#like")
+              a.icons-inner-img__item(href="")
+                svg.svg__search
+                  use(xlink:href="images/icons/icons.svg#search") 
       .pagination
         div.pagination__item
           a.pagination__link.active__pagination(href="#") 1

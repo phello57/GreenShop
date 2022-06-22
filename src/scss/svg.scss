@@ -4,18 +4,44 @@
     width: 150px;
     height: 34px;
   }
+  &__logo-mini {
+    width: 40px;
+    height: 40px;
+  }
+  &__logo-burger {
+    width: 40px;
+    height: 40px;
+  }
   &__search {
     width: 20px;
     height: 20px;
+  }
+  &__search-find-request {
+    position: absolute;
+    
+    width: 18px;
+    height: 18px;
   }
   &__market-cart {
     width: 29px;
     height: 24px;
   }
+  &__hamburger-menu {
+    width: 29px;
+    height: 24px;
+    z-index: -1;
+  }
+  &__hamburger-exit {
+    position: absolute;
+    width: 29px;
+    height: 24px;
+    z-index: 2;
+  }
   &__login {
     width: 20px;
     height: 20px;
   }
+
   // === / HEADER ===
   // === showcase ===
 
@@ -23,9 +49,13 @@
     position: absolute;
     top: 27%;
     left: 27%;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     transform: rotate(-90deg);
+  }
+  &__like {
+    width: 26px;
+    height: 24px;
   }
 
   // === /showcase ===

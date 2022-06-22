@@ -11,6 +11,9 @@
 
   &__title {
     padding-bottom: 13px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 16px;
   }
 
   &__subtitle {
@@ -77,5 +80,11 @@
     font-size: 14px;
     line-height: 16px;
     padding-left: 13px;
+    color: #3d3d3d;
+  }
+
+  &__href:hover {
+    color: $color-main;
+    width: 500;
   }
 }

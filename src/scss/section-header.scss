@@ -1,22 +1,28 @@
 .section-header__inner {
+
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   padding-top: $padding-vertical-xs;
-  @include divider;
+  border-bottom: 0.3px solid rgb(70 163 88 / 50%);
 }
 
 .menu {
-  display: block;
-
+  // visibility: hidden;
+  // position: absolute;
+  
   &__list {
     display: flex;
+    margin-top: 7px;
+    padding-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   &__list-item {
     z-index: 0;
-    width: auto;
-    padding-bottom: 30px;
+    
+    padding-bottom: 14px;
   }
 
   &__list-item + &__list-item {
@@ -24,6 +30,7 @@
   }
 
   &__list-link {
+    white-space: nowrap;
     padding-bottom: 25px;
     color: $color-primary-text;
     text-decoration: none;
@@ -39,14 +46,15 @@
   position: relative;
   display: flex;
   align-items: center;
+  padding-left: 10px;
 
-  svg + svg {
-    padding: 0 30px;
+  button + button {
+    margin: 0 30px;
   }
 
   &__countOnMarketCart {
     position: absolute;
-    right: 124px;
+    right: 1px;
     bottom: 14px;
     display: flex;
     align-items: center;
@@ -61,4 +69,77 @@
     border: 2px solid #fff;
     border-radius: 100%;
   }
+}
+.plants-search {
+  &__wrapper {
+    display: flex;
+    position: absolute;
+    visibility: hidden;
+  }
+  &__input {
+    width: 190px;
+    height: 45px;
+    padding-left: 38px;
+    padding-right: auto;
+    border: none;
+    border: 2px solid #fff;
+    background: #F8F8F8;
+    border-radius: 10px;
+    &::placeholder {
+      opacity: 0.7;
+    }
+  }
+}
+
+.btn__search-find-request {
+  background: none;
+  position: absolute;
+  bottom:32px;
+  left: 7px;
+}
+
+.hamburger-menu {
+  visibility: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 380px;
+  background-color: #F8F8F8;
+  z-index: 5;
+  &__icons {
+    position: relative;
+    height: 60px;
+    border-bottom: 1px solid #E2E7EB;
+    margin: 0 20px 0 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  &__wrapper {
+    border-bottom: 1px solid #E2E7EB;
+    margin: 20px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7px;
+    padding-left: 10px;
+    padding-top: 15px;
+  }
+  &__list-item {
+    padding-bottom: 25px;
+  }
+  &__list-link {
+    font-size: 22px;
+    color: $color-primary-text;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  &__list-link:hover {
+    text-shadow: 0 0 0.9px $color-primary-text, 0 0 0.9px $color-primary-text;
+  }
+}
+.logo-mini {
+  visibility: hidden;
 }
