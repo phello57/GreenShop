@@ -1,16 +1,14 @@
+
 // === HEADER ===
-@media(max-width: 800px) {
+@media(max-width: 850px) {
   .menu {
     &__list-item + &__list-item {
       padding-left: 20px;
     }
   }
 }
-@media(max-width: 711px) {
 
-}
-
-@media(max-width: 710px) {
+@media(max-width: 760px) {
   .section-header__inner {
     border-bottom: none;
   }
@@ -60,6 +58,11 @@
   .svg__login {
     visibility: hidden;
     position: absolute;
+  }
+}
+@media(max-width: 414px) {
+  .menu {
+    
   }
 }
 // === / HEADER ===

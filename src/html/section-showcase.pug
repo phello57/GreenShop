@@ -57,11 +57,11 @@ section.section-outer.showcase
       .showcase__sorting-wrapper
         .showcase__categories
           a.active__showcase-sort(href="#")  All plants
-          a(href="#")  New Arrivals
-          a(href="#")  Sale
+          a(href="#") New Arrivals
+          a(href="#") Sale
         .showcase__sorting
           .showcase__sorting-text Short by:
-          form.showcase__sorting-item(type="" name="sorting")
+          form.showcase__sorting-item(type="#" name="sorting")
             select.showcase__sorting-select(name="sorting")
               option.showcase__sorting-option(value="") Default sorting
               option.showcase__sorting-option(value="") Any sorting
@@ -73,19 +73,17 @@ section.section-outer.showcase
             img.slot__image(alt="Цветок Barberton Daisy", src="images/content/image1.png")
           a.slot__name(href="#") Barberton Daisy 
           .slot__cost $217.00
-
           form.form__icons-inner-img(action="")
             .icons-inner-img
-              .icons-inner-img__item
+              a.icons-inner-img__item
                 svg.svg__market-cart
                   use(xlink:href="images/icons/icons.svg#market-cart")
               .icons-inner-img__item
                 svg.svg__like
                   use(xlink:href="images/icons/icons.svg#like")
-              a.icons-inner-img__item(href="")
+              a.icons-inner-img__item(href="https://www.youtube.com/")
                 svg.svg__search
                   use(xlink:href="images/icons/icons.svg#search") 
-
         .slot__wrapper
           a.slot__image-wrapper(href="#")
             img.slot__image(alt="Цветок Angel Wing Begonia", src="images/content/image2.png")
@@ -120,7 +118,6 @@ section.section-outer.showcase
               a.icons-inner-img__item(href="")
                 svg.svg__search
                   use(xlink:href="images/icons/icons.svg#search") 
-      .showcase__slots-wrapper
         .slot__wrapper
           a.slot__image-wrapper(href="#")
             img.slot__image(alt="Цветок Beach Spider Lily" src="images/content/image4.png")
@@ -170,7 +167,6 @@ section.section-outer.showcase
               a.icons-inner-img__item(href="")
                 svg.svg__search
                   use(xlink:href="images/icons/icons.svg#search") 
-      .showcase__slots-wrapper
         .slot__wrapper
           a.slot__image-wrapper(href="#")
             img.slot__image(alt="Цветок Bird's Nest Fern" src="images/content/image7.png")
@@ -220,18 +216,18 @@ section.section-outer.showcase
               a.icons-inner-img__item(href="")
                 svg.svg__search
                   use(xlink:href="images/icons/icons.svg#search") 
-      .pagination
-        div.pagination__item
-          a.pagination__link.active__pagination(href="#") 1
-        div.pagination__item
-          a.pagination__link(href="#") 2
-        div.pagination__item
-          a.pagination__link(href="#") 3
-        div.pagination__item
-          a.pagination__link(href="#") 4
-        button.pagination__btn
-          svg.svg__pagination-arrow-right                               
-            use(xlink:href="images/icons/icons.svg#pagination-arrow-right")
+  .pagination__wrapper
+    button.pagination__item
+      a.pagination__link.active__pagination(href="#") 1
+    button.pagination__item
+      a.pagination__link(href="#") 2
+    button.pagination__item
+      a.pagination__link(href="#") 3
+    button.pagination__item
+      a.pagination__link(href="#") 4
+    button.pagination__btn
+      svg.svg__pagination-arrow-right                               
+        use(xlink:href="images/icons/icons.svg#pagination-arrow-right")
 
 
 

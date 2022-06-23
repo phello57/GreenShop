@@ -160,18 +160,15 @@
     line-height: 30px;
     text-decoration: none;
   }
-
   &__socials {
     display: flex;
     justify-content: center;
   }
-
   &__socials-and-pay {
     width: 205px;
     margin: 20px 0;
     padding: 0 23px;
   }
-
   &__social-wrapper {
     position: relative;
     width: 30px;
@@ -181,8 +178,52 @@
     border-radius: 4px;
   }
 }
-
 .copyright-wrapper {
   display: flex;
   justify-content: center;
+}
+//============================================================
+@media (max-width:1200px) {
+  .subscribe {
+    display: flex;
+    justify-content: center;
+    &__cardWhy {
+      visibility: hidden;
+      position: absolute;
+    }
+  }
+}
+@media (max-width:1030px) {
+  .footer-menu {
+    display: flex;
+    height: 246px;
+    background-color: #fbfbfb;
+    border-top: 1px solid $color-main;
+  
+    &__list {
+      width: 150px;
+      margin: 10px 0;
+      padding: 0 13px;
+    }
+  }
+}
+@media (max-width:1030px) {
+  .our-contacts {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+@media (max-width:815px) {
+  .footer-menu {
+    justify-content: center;
+    &__list {
+      width: 150px;
+      margin-top: 10px;
+      padding: 0;
+    }
+  }
+  .footer-menu__socials-and-pay  {
+    visibility: hidden;
+    position: absolute;
+  }
 }

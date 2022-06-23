@@ -11,28 +11,31 @@ import Swiper, { Navigation, Pagination } from 'swiper';
  localSlider.slider.start()
 
 
-const imageWrappers = document.querySelector(".showcase__wrapper")
-imageWrappers.onmouseover = handler
-imageWrappers.onmouseout = handler
+const imageWrappers = document.querySelector(".showcase__slots-wrapper")
+console.log(imageWrappers);
+// imageWrappers.onmouseenter = handler
+// imageWrappers.onmouseleave = handler
 
-// imageWrappers.onmouseover = function(event) {
-//   let iconsWrapper = event.target.parentNode.parentNode.parentNode.lastChild.firstChild
-//   iconsWrapper.classList.add("active__icons-inner-img")
-// };
-// imageWrappers.onmouseout = function(event) {
-//   let iconsWrapper = event.target.parentNode.parentNode.parentNode.lastChild.firstChild
-//   iconsWrapper.classList.remove("active__icons-inner-img")
-// };
-
-function handler(event) {
+imageWrappers.onmouseover = function(event) {
   let iconsWrapper = event.target.parentNode.parentNode.parentNode.lastChild.firstChild
-  if (event.type === 'mouseover') {
-    iconsWrapper.classList.add("active__icons-inner-img")
-  }
-  if (event.type === 'mouseout' ) {
-    iconsWrapper.classList.remove("active__icons-inner-img")
-  }
+  iconsWrapper.classList.add("active__icons-inner-img")
 };
+imageWrappers.onmouseout = function(event) {
+  let iconsWrapper = event.target.parentNode.parentNode.parentNode.lastChild.firstChild
+  iconsWrapper.classList.remove("active__icons-inner-img") 
+};
+
+// function handler(event) {
+//   let iconsWrapper = event.target.parentNode.parentNode.parentNode.lastChild.firstChild
+//   if (event.type === 'mouseenter') {
+//     console.log(1);
+//     iconsWrapper.classList.add("active__icons-inner-img")
+//   }
+//   if (event.type === 'mouseleave' ) {
+//     console.log(2);
+//     iconsWrapper.classList.remove("active__icons-inner-img")
+//   }
+// };
 
 // Наведенная мышка на изображение и на иконки дает иконкам класс .active__icons-inner-img
 // Наведенная мышка вне блока убирает с иконок active__icons-inner-img
