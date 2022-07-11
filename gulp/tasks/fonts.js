@@ -39,7 +39,7 @@ export const ttfToWoff = () => {
     // Выгружаем в исходную папку
     .pipe(app.gulp.dest(`${app.path.srcFolder}/fonts/*.ttf`))
 
-    .pipe(ttf2woff2())
+    
 
     .pipe(app.gulp.dest(`${app.path.build.fonts}`))
 }

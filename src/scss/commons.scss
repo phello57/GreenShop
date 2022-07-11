@@ -3,7 +3,7 @@ body {
   font-weight: $fw-regular;
   font-size: 16px;
   font-family: CeraPro, sans-serif;
-  overflow-x:hidden; 
+  overflow-x: hidden;
 }
 
 .disable {
@@ -26,8 +26,9 @@ body {
   }
 
   &__link {
-    text-shadow: 0 0 0.9px $color-primary-text, 0 0 0.9px $color-primary-text;
+    font-weight: 700;
     border-bottom: 3px solid $color-main;
+    color: $color-main !important;
   }
 
   &__slide {
@@ -39,7 +40,6 @@ body {
 
   &__icons-inner-img {
     visibility: visible !important;
-    
     animation-name: iconsUp;
     animation-duration: 0.7s;
   }
@@ -62,9 +62,108 @@ body {
     padding-bottom: 4px;
     border-bottom: 2px solid $color-main;
   }
+
+  &__size {
+    font-weight: 700 !important;
+    border: 1px solid $color-main !important;
+    color: $color-main !important;
+  }
 }
 
 .btn {
+  &__change-count {
+    border-radius: 29px;
+    background-color: $color-main;
+    border: none;
+    height: 38px;
+    width: 33px;
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;
+
+    &:hover {
+      @include hoverBtn;
+    }
+  }
+
+  &__full-description {
+    border: none;
+    background-color: #fff;
+    color: #3d3d3d;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    border-bottom: 3px solid $color-main;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+
+  &__full-reviews {
+    border: none;
+    background-color: #fff;
+    color: #3d3d3d;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 16px;
+    padding-bottom: 13px;
+    cursor: pointer;
+  }
+
+  &__buyNow {
+    height: 40px;
+    width: 130px;
+    background-color: $color-main;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid #fff;
+
+    &:hover {
+      @include hoverBtn;
+    }
+  }
+
+  &__addToCart {
+    height: 40px;
+    width: 130px;
+    border: 1px solid $color-main;
+    border-radius: 6px;
+    background-color: #fff;
+    color: $color-main;
+    font-weight: 700;
+
+    &:hover {
+      @include hoverBtn;
+    }
+  }
+
+  &__like-box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #46a358;
+    border-radius: 6px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      @include hoverBtn;
+    }
+  }
+
+  &__size {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    color: #727272;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
   // Кнопка открытия инпута
   &__search-input-open {
     border: none;
@@ -103,15 +202,50 @@ body {
     background-color: white;
     cursor: pointer;
   }
+
+  &__facebook {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__twitter {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__linkedIn {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__mail {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .section-outer {
   max-width: 1200px;
   margin: 0 auto;
-  width:100%;
+  width: 100%;
   box-sizing: border-box;
 }
-
 
 h3 {
   margin: 0;

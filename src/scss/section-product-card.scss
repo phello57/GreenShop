@@ -50,13 +50,14 @@
   }
 }
 //================================================================================
-@media(max-width: 1200px) {
+@media (max-width: 1200px) {
   .product-card {
     &__inner {
       flex-direction: column;
       align-items: center;
     }
   }
+
   .card {
     &__wrapper + &__wrapper {
       margin-left: 0;

@@ -96,16 +96,18 @@
     justify-content: center;
     align-items: center;
   }
+
   .posts {
     width: 600px;
     display: grid;
     grid-template-columns: 300px 300px;
-    grid-template-rows: 370px 370px ;
+    grid-template-rows: 370px 370px;
     grid-column-gap: 33px;
     grid-row-gap: 33px;
     justify-content: center;
+
     &__wrapper + &__wrapper {
-      margin-left: 0px;
+      margin-left: 0;
     }
   }
 }

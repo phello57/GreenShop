@@ -1,8 +1,8 @@
 @import "reset.scss";
 @import "fonts.scss";
+@import "mixins.scss";
 @import "vars.scss";
 @import "commons.scss";
-@import "mixins.scss";
 
 @import "svg.scss";
 
@@ -11,6 +11,7 @@
 @import "section-showcase.scss";
 @import "section-product-card.scss";
 @import "section-blog.scss";
+@import "section-page-product.scss";
 
 @import "footer.scss";
 @import "keyframes.scss";

@@ -100,6 +100,12 @@
     width: 16px;
     height: 16px;
   }
+  &__like-box {
+    width: 22px;
+    height: 23px;
+    fill: $color-main;
+    
+  }
   &__facebook {
     position: absolute;
     bottom: 0;
@@ -123,6 +129,7 @@
     transform: translate(-50%, -50%);
     width: 16px;
     height: 13px;
+    fill: black;
   }
   &__linkedIn {
     position: absolute;
@@ -131,12 +138,26 @@
     transform: translate(-50%, -50%);
     width: 20px;
     height: 14px;
+    fill: black;
   }
   &__union {
     position: absolute;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    fill: black;
+  }
+  &__mail {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+  }
+  &__star {
     width: 16px;
     height: 16px;
   }

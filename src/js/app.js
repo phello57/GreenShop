@@ -1,49 +1,23 @@
-
-
 import * as range from "./modules/input-range.js";
 import * as flsFunctions from "./modules/functions.js";
 import * as localSlider from "./modules/slider.js";
+import * as prodVie from "./modules/page-prod.js";
+import * as swiperSlider from "./modules/swiper.js";
+import Swiper from 'swiper';
+
 // import * as handler from "./modules/icons-inner-img.js";
 flsFunctions.isWebP();
 
-import Swiper, { Navigation, Pagination } from 'swiper';
+let swiper = new Swiper('.swiperRelated', {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  
+});
 
- localSlider.slider.start()
+prodVie.description.start()
+prodVie.slider.start()
+localSlider.slider.start()
 
-
-const imageWrappers = document.querySelector(".showcase__slots-wrapper")
-console.log(imageWrappers);
-// imageWrappers.onmouseenter = handler
-// imageWrappers.onmouseleave = handler
-
-imageWrappers.onmouseover = function(event) {
-  let iconsWrapper = event.target.parentNode.parentNode.parentNode.lastChild.firstChild
-  iconsWrapper.classList.add("active__icons-inner-img")
-};
-imageWrappers.onmouseout = function(event) {
-  let iconsWrapper = event.target.parentNode.parentNode.parentNode.lastChild.firstChild
-  iconsWrapper.classList.remove("active__icons-inner-img") 
-};
-
-// function handler(event) {
-//   let iconsWrapper = event.target.parentNode.parentNode.parentNode.lastChild.firstChild
-//   if (event.type === 'mouseenter') {
-//     console.log(1);
-//     iconsWrapper.classList.add("active__icons-inner-img")
-//   }
-//   if (event.type === 'mouseleave' ) {
-//     console.log(2);
-//     iconsWrapper.classList.remove("active__icons-inner-img")
-//   }
-// };
-
-// Наведенная мышка на изображение и на иконки дает иконкам класс .active__icons-inner-img
-// Наведенная мышка вне блока убирает с иконок active__icons-inner-img
-
-// active__icons-inner-img  дает иконкам visibility: visible;
-
-
-// =========================================================================
 // burger menu
 const btnOpenSearchInput = document.querySelector(".btn__search-input-open")
 const btnOpenBurgerMenu = document.querySelector(".btn__hamburger-menu")
