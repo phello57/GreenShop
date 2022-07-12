@@ -193,8 +193,8 @@
     justify-content: center;
 
     &__cardWhy {
-      visibility: hidden;
       position: absolute;
+      visibility: hidden;
     }
   }
 }
@@ -214,8 +214,8 @@
 }
 @media (max-width: 1030px) {
   .our-contacts {
-    visibility: hidden;
     position: absolute;
+    visibility: hidden;
   }
 }
 @media (max-width: 815px) {
@@ -230,7 +230,7 @@
   }
 
   .footer-menu__socials-and-pay {
-    visibility: hidden;
     position: absolute;
+    visibility: hidden;
   }
 }

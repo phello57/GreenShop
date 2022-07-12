@@ -17,23 +17,23 @@
   }
 
   &__subtitle {
+    padding-bottom: 35px;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    padding-bottom: 35px;
   }
 }
 
 .posts {
-  width: 1200px;
   display: flex;
+  width: 1200px;
 
   &__wrapper {
     position: relative;
     width: 268px;
-    background: #fbfbfb;
-    text-align: start;
     padding-bottom: 13px;
+    text-align: start;
+    background: #fbfbfb;
   }
 
   &__wrapper + &__wrapper {
@@ -48,44 +48,44 @@
   }
 
   &__date {
-    color: $color-main;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
     padding-top: 8px;
     padding-bottom: 5px;
     padding-left: 13px;
-  }
-
-  &__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 26px;
-    padding-bottom: 7px;
-    padding-left: 13px;
-  }
-
-  &__text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 22px;
-    padding-bottom: 15px;
-    padding-right: 12px;
-    padding-left: 13px;
-  }
-
-  &__href {
-    text-decoration: none;
+    color: $color-main;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
+  }
+
+  &__title {
+    padding-bottom: 7px;
+    padding-left: 13px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  &__text {
+    padding-right: 12px;
+    padding-bottom: 15px;
+    padding-left: 13px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__href {
     padding-left: 13px;
     color: #3d3d3d;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
   }
 
   &__href:hover {
-    color: $color-main;
     width: 500;
+    color: $color-main;
   }
 }
 // =========================================
@@ -93,18 +93,18 @@
   .blog__wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
 
   .posts {
-    width: 600px;
     display: grid;
-    grid-template-columns: 300px 300px;
-    grid-template-rows: 370px 370px;
-    grid-column-gap: 33px;
     grid-row-gap: 33px;
+    grid-column-gap: 33px;
+    grid-template-rows: 370px 370px;
+    grid-template-columns: 300px 300px;
     justify-content: center;
+    width: 600px;
 
     &__wrapper + &__wrapper {
       margin-left: 0;
@@ -113,9 +113,9 @@
 }
 @media (max-width: 650px) {
   .posts {
-    grid-template-columns: 300px;
-    grid-template-rows: 370px;
-    grid-column-gap: 33px;
     grid-row-gap: 33px;
+    grid-column-gap: 33px;
+    grid-template-rows: 370px;
+    grid-template-columns: 300px;
   }
 }
