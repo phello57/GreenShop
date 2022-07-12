@@ -1,44 +1,288 @@
 body {
-  font-family: 'CeraPro', sans-serif;
-  font-weight: $fw-regular;
   color: $color-primary-text;
+  font-weight: $fw-regular;
   font-size: 16px;
+  font-family: CeraPro, sans-serif;
+  overflow-x: hidden;
 }
+
+.disable {
+  position: absolute !important;
+  visibility: hidden !important;
+}
+
+.active {
+  &__burger-menu {
+    visibility: visible !important;
+    animation-name: inputOpen;
+    animation-duration: 0.5s;
+  }
+
+  &__input-open {
+    position: relative !important;
+    visibility: visible !important;
+    animation-name: inputOpen;
+    animation-duration: 2s;
+  }
+
+  &__link {
+    font-weight: 700;
+    border-bottom: 3px solid $color-main;
+    color: $color-main !important;
+  }
+
+  &__slide {
+    position: static !important;
+    visibility: visible !important;
+    animation-name: slide-animation;
+    animation-duration: 2s;
+  }
+
+  &__icons-inner-img {
+    visibility: visible !important;
+    animation-name: iconsUp;
+    animation-duration: 0.7s;
+  }
+
+  &__pagination {
+    color: #fff;
+    background: $color-main;
+  }
+
+  &__showcase-category {
+    color: $color-main;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 40px;
+  }
+
+  &__showcase-sort {
+    font-weight: 700;
+    color: $color-main;
+    padding-bottom: 4px;
+    border-bottom: 2px solid $color-main;
+  }
+
+  &__size {
+    font-weight: 700 !important;
+    border: 1px solid $color-main !important;
+    color: $color-main !important;
+  }
+}
+
+.btn {
+  &__change-count {
+    border-radius: 29px;
+    background-color: $color-main;
+    border: none;
+    height: 38px;
+    width: 33px;
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;
+
+    &:hover {
+      @include hoverBtn;
+    }
+  }
+
+  &__full-description {
+    border: none;
+    background-color: #fff;
+    color: #3d3d3d;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    border-bottom: 3px solid $color-main;
+    padding-bottom: 10px;
+    cursor: pointer;
+  }
+
+  &__full-reviews {
+    border: none;
+    background-color: #fff;
+    color: #3d3d3d;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 16px;
+    padding-bottom: 13px;
+    cursor: pointer;
+  }
+
+  &__buyNow {
+    height: 40px;
+    width: 130px;
+    background-color: $color-main;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 14px;
+    border: 1px solid #fff;
+
+    &:hover {
+      @include hoverBtn;
+    }
+  }
+
+  &__addToCart {
+    height: 40px;
+    width: 130px;
+    border: 1px solid $color-main;
+    border-radius: 6px;
+    background-color: #fff;
+    color: $color-main;
+    font-weight: 700;
+
+    &:hover {
+      @include hoverBtn;
+    }
+  }
+
+  &__like-box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #46a358;
+    border-radius: 6px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      @include hoverBtn;
+    }
+  }
+
+  &__size {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    color: #727272;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  // Кнопка открытия инпута
+  &__search-input-open {
+    border: none;
+    background-color: white;
+    border-bottom: 3px solid #fff;
+    cursor: pointer;
+  }
+  // кнопка поиска по запросу
+  &__search-find-request {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  &__market-cart {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__hamburger-menu {
+    visibility: hidden;
+    position: absolute;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-left: auto;
+  }
+
+  &__hamburger-exit {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  &__facebook {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__twitter {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__linkedIn {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  &__mail {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
 .section-outer {
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-@keyframes slide-animation {
-  0% {opacity: 0.4;}
-  100% {opacity: 1;}
+h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 16px;
 }
-.active {
-  &__link {
-  text-shadow: 0 0 .9px $color-primary-text,0 0 .9px $color-primary-text;
-  border-bottom: 3px solid $color-main;
-  }
-  &__slide {
-    visibility: visible !important;
-    position: static !important;
-    animation-duration: 2s;
-    animation-name: slide-animation;
-  }
+
+h4 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 24px;
 }
+
 .primary-btn {
-  font-family: 'CeraPro';
   display: flex;
   align-items: center;
-  border: none;
-  font-size: 16px;
-  border-radius: 6px;
-  font-weight: 500;
-  background-color: $color-main;
-  height: 35px;
-  padding: 0 17px 0 17px;
+  height: 33px;
+  padding: 0 17px;
   color: #fff;
   font-weight: $fw-medium;
+  font-size: 16px;
+  font-family: CeraPro;
+  background-color: $color-main;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 3px solid $color-main;
+
   &__text {
     padding-left: 3px;
+  }
+
+  &:hover {
+    background-color: $color-hover;
+    border: 3px solid $color-hover;
+    transition: $transition;
   }
 }

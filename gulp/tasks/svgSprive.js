@@ -8,11 +8,11 @@ export const svgSprive = () => {
         message: "Error: <%= error.message %>"
       })
     ))
+    //.pipe(app.plugins.replace(/[fill="]....["]/g," "))
     .pipe(svgSprite({
       mode: {
         stack: {
           sprite: `../icons/icons.svg`
-          // example: true
         }
       },
     }

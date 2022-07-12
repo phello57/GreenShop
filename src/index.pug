@@ -6,10 +6,12 @@ html
   body
 
     include html/header 
-    include html/slider
+    
     main.page 
-      
-
+      include html/slider
+      include html/section-showcase
+      include html/section-product-card
+      include html/section-blog
     include html/footer 
     
-    script(src="js/app.min.js")
+  script(src="js/app.min.js")

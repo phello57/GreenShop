@@ -2,29 +2,78 @@ header.section-outer.section-header
     .section-header__inner
       a.logo(href="#")
         svg.svg__logo
-          use(xlink:href="images/icons/icons.svg#logo")
+          use(aria-label="greenshop" xlink:href="images/icons/icons.svg#logo")
+      
       nav.menu
         ul.menu__list
           li.menu__list-item
             a.menu__list-link.active__link(href="#") Home
           li.menu__list-item
-            a.menu__list-link(href="#") Shop
+            a.menu__list-link(href="product-vie.html") Shop
           li.menu__list-item
             a.menu__list-link(href="#") Plant Care
           li.menu__list-item 
             a.menu__list-link(href="#") Blogs
       .icons
-        svg.svg__search
-          use(xlink:href="images/icons/icons.svg#search")
-        svg.svg__market-cart
-          use(xlink:href="images/icons/icons.svg#market-cart")
-        span.icons__countOnMarketCart 17
+        a.logo-mini(href="#")
+          svg.svg__logo-mini
+            use(aria-label="greenshop" xlink:href="images/icons/icons.svg#logo-mini")
+        div.plants-search__wrapper
+          button.btn__search-find-request
+            svg.svg__search-find-request
+              use(aria-label="search" xlink:href="images/icons/icons.svg#search-find-request")
+          form(action="text")
+            input.plants-search__input(type="text" placeholder="Find your plants")
+        button.btn__search-input-open
+          svg.svg__search
+            use(aria-label="search" xlink:href="images/icons/icons.svg#search")
+        button.btn__hamburger-menu
+          svg.svg__hamburger-menu
+            use(aria-label="hamburger-menu" xlink:href="images/icons/icons.svg#hamburger-menu")
+        button.btn__market-cart
+          svg.svg__market-cart
+            use(aria-label="market-cart" xlink:href="images/icons/icons.svg#market-cart")
+          span.icons__countOnMarketCart 17
         button.primary-btn
           svg.svg__login
-            use(xlink:href="images/icons/icons.svg#login")
+            use(aria-label="autorisation" xlink:href="images/icons/icons.svg#login")
           .primary-btn__text Login
-            
-        
+      .hamburger-menu
+        div.hamburger-menu__icons
+          a.logo-burger(href="#")
+            svg.svg__logo-burger
+              use(aria-label="greenshop" xlink:href="images/icons/icons.svg#logo-mini")
+          button.btn__hamburger-exit
+            svg.svg__hamburger-exit
+              use(aria-label="autorisation" xlink:href="images/icons/icons.svg#exit")
+        nav.hamburger-menu__wrapper
+          ul.hamburger-menu__list
+            li.hamburger-menu__list-item
+              a.hamburger-menu__list-link(href="#") Home
+            li.hamburger-menu__list-item
+              a.hamburger-menu__list-link(href="#") Shop
+            li.hamburger-menu__list-item
+              a.hamburger-menu__list-link(href="#") Plant Care
+            li.hamburger-menu__list-item 
+              a.hamburger-menu__list-link(href="#") Blogs
+        div
+          div.footer-menu__socials-and-pay 
+            div.footer-menu__socials
+              a.footer-menu__social-wrapper(alt="facebook" title="Запрещено в России" href="#")
+                svg.svg__facebook
+                  use(xlink:href="images/icons/icons.svg#Facebook") 
+              a.footer-menu__social-wrapper(alt="instagram" title="Запрещено в России" href="#")
+                svg.svg__instagram
+                  use(xlink:href="images/icons/icons.svg#Instagram") 
+              a.footer-menu__social-wrapper(alt="twitter" title="Запрещено в России" href="#")
+                svg.svg__twitter
+                  use(xlink:href="images/icons/icons.svg#Twitter")
+              a.footer-menu__social-wrapper(alt="linkedin" title="Запрещено в России" href="#")
+                svg.svg__linkedIn
+                  use(xlink:href="images/icons/icons.svg#Linkedin")
+              a.footer-menu__social-wrapper(alt="union" title="Запрещено в России" href="#")
+                svg.svg__union
+                  use(xlink:href="images/icons/icons.svg#Union")
 
 
 

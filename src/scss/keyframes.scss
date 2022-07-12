@@ -1,0 +1,31 @@
+// === showcase ===
+// при наведении на товар появляются иконки
+@keyframes iconsUp {
+  0% {
+    bottom: -5px;
+  }
+
+  100% {
+    bottom: 5%;
+  }
+}
+@keyframes inputOpen {
+  0% {
+    right: -100%;
+    opacity: 0.1;
+  }
+
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+@keyframes slide-animation {
+  0% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

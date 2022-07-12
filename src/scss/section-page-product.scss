@@ -1,0 +1,260 @@
+.page-product {
+  display: flex;
+  flex-direction: column;
+
+  &__description-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    padding-top: 36px;
+    padding-bottom: 43px;
+  }
+
+  &__slider-wrapper {
+    display: flex;
+  }
+
+  &__full-description-wrapper {
+  }
+}
+
+.product-slider {
+  &__secondary-slides-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__main-slides {
+  }
+
+  &__secondary-img {
+    width: 101px;
+    height: 101px;
+  }
+
+  &__main-img {
+    width: 404px;
+    height: 404px;
+  }
+}
+
+.product-vie {
+  height: 573px;
+  display: flex;
+
+  &__title {
+    padding-bottom: 43px;
+    padding-top: 36px;
+  }
+
+  &__description {
+    position: relative;
+  }
+}
+
+.description {
+  &__name {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 16px;
+  }
+
+  &__cost {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 16px;
+    color: $color-main;
+    padding-top: 21px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $color-hover;
+  }
+
+  &__size-title {
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  &__size-title {
+    font-weight: 500;
+    padding-top: 24px;
+  }
+
+  &__size-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 23px;
+
+    button + button {
+      margin-left: 10px;
+    }
+  }
+
+  &__count-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__short-wrapper {
+    padding-top: 12px;
+  }
+
+  &__short-title {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    padding-bottom: 12px;
+  }
+
+  &__short-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__rating-wrapper {
+    display: flex;
+  }
+  // btns
+  &__btn-wrapper {
+    display: flex;
+    padding-bottom: 26px;
+  }
+
+  &__count {
+    width: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__count-wrapper {
+    margin-right: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__btn-buy-wrapper {
+    display: flex;
+    align-items: flex-end;
+
+    button {
+      margin-right: 10px;
+    }
+  }
+
+  &__share-wrapper {
+    display: flex;
+
+    button {
+      margin-left: 15px;
+    }
+  }
+  // sku etc
+  &__sku-wrapper {
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  &__info-title {
+    color: #a5a5a5;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  &__sku {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+  }
+
+  &__categories-wrapper {
+    display: flex;
+    padding-bottom: 10px;
+  }
+
+  &__tags-wrapper {
+    padding-bottom: 10px;
+    display: flex;
+  }
+
+  &__link {
+    text-decoration: none;
+    margin-left: 7px;
+    color: $color-main;
+
+    &:hover {
+      color: $color-hover;
+    }
+  }
+}
+
+.stars {
+  &__wrapper {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 45px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.full-description {
+  &__title-wrapper {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 0.3px solid rgb(70 163 88 / 50%);
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    font-family: "Cera Pro";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #727272;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.swiperRelated {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-title {
+  padding-top: 50px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $color-main;
+  padding-bottom: 10px;
+  border-bottom: 0.3px solid rgb(70 163 88 / 50%);
+}
