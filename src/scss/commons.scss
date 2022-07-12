@@ -1,9 +1,9 @@
 body {
+  overflow-x: hidden;
   color: $color-primary-text;
   font-weight: $fw-regular;
   font-size: 16px;
   font-family: CeraPro, sans-serif;
-  overflow-x: hidden;
 }
 
 .disable {
@@ -26,9 +26,9 @@ body {
   }
 
   &__link {
+    color: $color-main !important;
     font-weight: 700;
     border-bottom: 3px solid $color-main;
-    color: $color-main !important;
   }
 
   &__slide {
@@ -57,29 +57,29 @@ body {
   }
 
   &__showcase-sort {
-    font-weight: 700;
-    color: $color-main;
     padding-bottom: 4px;
+    color: $color-main;
+    font-weight: 700;
     border-bottom: 2px solid $color-main;
   }
 
   &__size {
+    color: $color-main !important;
     font-weight: 700 !important;
     border: 1px solid $color-main !important;
-    color: $color-main !important;
   }
 }
 
 .btn {
   &__change-count {
-    border-radius: 29px;
-    background-color: $color-main;
-    border: none;
-    height: 38px;
     width: 33px;
+    height: 38px;
+    color: #fff;
     font-weight: 400;
     font-size: 28px;
-    color: #fff;
+    background-color: $color-main;
+    border: none;
+    border-radius: 29px;
 
     &:hover {
       @include hoverBtn;
@@ -87,37 +87,37 @@ body {
   }
 
   &__full-description {
-    border: none;
-    background-color: #fff;
+    padding-bottom: 10px;
     color: #3d3d3d;
     font-weight: 700;
     font-size: 17px;
     line-height: 16px;
+    background-color: #fff;
+    border: none;
     border-bottom: 3px solid $color-main;
-    padding-bottom: 10px;
     cursor: pointer;
   }
 
   &__full-reviews {
-    border: none;
-    background-color: #fff;
+    padding-bottom: 13px;
     color: #3d3d3d;
     font-weight: 500;
     font-size: 17px;
     line-height: 16px;
-    padding-bottom: 13px;
+    background-color: #fff;
+    border: none;
     cursor: pointer;
   }
 
   &__buyNow {
-    height: 40px;
     width: 130px;
-    background-color: $color-main;
+    height: 40px;
     color: #fff;
-    border-radius: 6px;
     font-weight: 700;
     font-size: 14px;
+    background-color: $color-main;
     border: 1px solid #fff;
+    border-radius: 6px;
 
     &:hover {
       @include hoverBtn;
@@ -125,13 +125,13 @@ body {
   }
 
   &__addToCart {
-    height: 40px;
     width: 130px;
-    border: 1px solid $color-main;
-    border-radius: 6px;
-    background-color: #fff;
+    height: 40px;
     color: $color-main;
     font-weight: 700;
+    background-color: #fff;
+    border: 1px solid $color-main;
+    border-radius: 6px;
 
     &:hover {
       @include hoverBtn;
@@ -139,14 +139,14 @@ body {
   }
 
   &__like-box {
-    width: 40px;
-    height: 40px;
-    border: 1px solid #46a358;
-    border-radius: 6px;
-    background-color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #46a358;
+    border-radius: 6px;
 
     &:hover {
       @include hoverBtn;
@@ -156,50 +156,50 @@ body {
   &__size {
     width: 28px;
     height: 28px;
-    border-radius: 50%;
-    border: 1px solid #eaeaea;
-    background-color: #fff;
     color: #727272;
     font-weight: 500;
     font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
   }
 
   // Кнопка открытия инпута
   &__search-input-open {
-    border: none;
     background-color: white;
+    border: none;
     border-bottom: 3px solid #fff;
     cursor: pointer;
   }
   // кнопка поиска по запросу
   &__search-find-request {
-    border: none;
     background-color: white;
+    border: none;
     cursor: pointer;
   }
 
   &__market-cart {
-    border: none;
-    background-color: white;
-    cursor: pointer;
     position: relative;
+    background-color: white;
+    border: none;
+    cursor: pointer;
   }
 
   &__hamburger-menu {
-    visibility: hidden;
     position: absolute;
-    border: none;
-    background-color: white;
-    cursor: pointer;
     margin-left: auto;
+    background-color: white;
+    border: none;
+    visibility: hidden;
+    cursor: pointer;
   }
 
   &__hamburger-exit {
     position: absolute;
-    right: 30px;
     top: 20px;
-    border: none;
+    right: 30px;
     background-color: white;
+    border: none;
     cursor: pointer;
   }
 
@@ -241,10 +241,10 @@ body {
 }
 
 .section-outer {
+  box-sizing: border-box;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
 }
 
 h3 {
@@ -272,9 +272,9 @@ h4 {
   font-family: CeraPro;
   background-color: $color-main;
   border: none;
+  border: 3px solid $color-main;
   border-radius: 6px;
   cursor: pointer;
-  border: 3px solid $color-main;
 
   &__text {
     padding-left: 3px;

@@ -13,17 +13,17 @@
 }
 
 .category {
-  background: #fbfbfb;
   width: 310px;
   padding-bottom: 6px;
+  background: #fbfbfb;
 
   &__title {
     padding-top: 10px;
+    padding-bottom: 7px;
     padding-left: 17px;
     font-weight: 700;
     font-size: 18px;
     line-height: 16px;
-    padding-bottom: 7px;
   }
 
   &__wrapper {
@@ -55,10 +55,10 @@
   }
 
   &__text {
-    text-align: center;
     font-weight: 700;
     font-size: 23px;
     line-height: 16px;
+    text-align: center;
   }
 
   &__img-flower {
@@ -116,21 +116,21 @@ input[type="range"].styled-slider:focus {
 
 /* webkit */
 input[type="range"].styled-slider::-webkit-slider-thumb {
-  appearance: none;
   width: 20px;
   height: 20px;
-  border-radius: 10px;
+  margin-top: calc(5px * 0.5 - max(20px * 0.5, 2px));
   background: #46a358;
   border: 2px solid #fff;
+  border-radius: 10px;
   box-shadow: none;
-  margin-top: calc(5px * 0.5 - max(20px * 0.5, 2px));
+  appearance: none;
 }
 
 input[type="range"].styled-slider::-webkit-slider-runnable-track {
   height: 5px;
+  background: #a1d1a0;
   border: none;
   border-radius: 8px;
-  background: #a1d1a0;
   box-shadow: none;
 }
 
@@ -143,17 +143,17 @@ input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track
 input[type="range"].styled-slider::-moz-range-thumb {
   width: max(calc(20px - 2px - 2px), 0px);
   height: max(calc(20px - 2px - 2px), 0px);
-  border-radius: 10px;
   background: #46a358;
   border: 2px solid #fff;
+  border-radius: 10px;
   box-shadow: none;
 }
 
 input[type="range"].styled-slider::-moz-range-track {
   height: 5px;
+  background: #a1d1a0;
   border: none;
   border-radius: 8px;
-  background: #a1d1a0;
   box-shadow: none;
 }
 
@@ -174,32 +174,32 @@ input[type="range"].styled-slider::-ms-fill-lower {
 }
 
 input[type="range"].styled-slider::-ms-thumb {
+  box-sizing: border-box;
   width: 20px;
   height: 20px;
-  border-radius: 10px;
+  margin-top: 0;
   background: #46a358;
   border: 2px solid #fff;
+  border-radius: 10px;
   box-shadow: none;
-  margin-top: 0;
-  box-sizing: border-box;
 }
 
 input[type="range"].styled-slider::-ms-track {
+  box-sizing: border-box;
   height: 5px;
-  border-radius: 8px;
   background: #a1d1a0;
   border: none;
+  border-radius: 8px;
   box-shadow: none;
-  box-sizing: border-box;
 }
 
 input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
   height: 5px;
-  border-radius: 8px 0 0 8px;
   margin: -undefined 0 -undefined -undefined;
   background: #46a358;
   border: none;
   border-right-width: 0;
+  border-radius: 8px 0 0 8px;
 }
 // ===/ INPUT ===
 
@@ -227,11 +227,11 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
   }
 
   &__slots-wrapper {
-    height: 350px;
     display: grid;
-    grid-template-columns: 259px 259px 259px;
-    grid-template-rows: 420px 420px 420px;
     grid-column-gap: 33px;
+    grid-template-rows: 420px 420px 420px;
+    grid-template-columns: 259px 259px 259px;
+    height: 350px;
     margin-bottom: 70px;
   }
 
@@ -244,12 +244,12 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
   }
 
   &__sorting-select {
-    border: none;
-    font-family: CeraPro, sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 15px;
+    font-family: CeraPro, sans-serif;
+    font-style: normal;
     line-height: 16px;
+    border: none;
   }
 }
 
@@ -266,8 +266,8 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
     display: block;
     padding-top: 12px;
     padding-bottom: 6px;
-    text-decoration: none;
     color: black;
+    text-decoration: none;
 
     &:hover {
       color: $color-main;
@@ -292,33 +292,33 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
     top: 10px;
     left: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 80px;
     height: 29px;
+    color: #fff;
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
     background-color: $color-main;
-    color: #fff;
   }
 }
 
 .icons-inner-img {
-  visibility: hidden;
   position: absolute;
-  display: flex;
-  width: 125px;
   bottom: 5%;
   left: 30%;
+  display: flex;
+  width: 125px;
+  visibility: hidden;
 
   &__item {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background-color: #fff;
+    justify-content: center;
     width: 35px;
     height: 35px;
+    background-color: #fff;
     border-radius: 5px;
   }
 
@@ -339,8 +339,8 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
 
   &__item {
     position: relative;
-    border: none;
     background: none;
+    border: none;
   }
 
   &__item + &__item {
@@ -348,28 +348,28 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
   }
 
   &__link {
-    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 35px;
     height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #e5e5e5;
-    border-radius: 4px;
     font-weight: 300;
     font-size: 18px;
     line-height: 16px;
+    text-decoration: none;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
   }
 
   &__btn {
     position: relative;
     width: 35px;
     height: 35px;
+    margin-left: 10px;
+    background: none;
     border: 1px solid #e5e5e5;
     border-radius: 4px;
-    margin-left: 10px;
     cursor: pointer;
-    background: none;
   }
 }
 // ==================================
@@ -388,16 +388,16 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
     }
 
     &__sorting {
-      visibility: hidden;
-      display: none;
       position: absolute;
+      display: none;
+      visibility: hidden;
       pointer-events: none;
     }
 
     &__slots-wrapper {
-      grid-template-columns: 259px 259px;
-      grid-template-rows: 420px 440px 420px 440px;
       grid-column-gap: 33px;
+      grid-template-rows: 420px 440px 420px 440px;
+      grid-template-columns: 259px 259px;
     }
   }
 }
@@ -408,9 +408,9 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
 }
 @media (max-width: 950px) {
   .filter-list {
+    position: absolute;
     display: none;
     visibility: hidden;
-    position: absolute;
     pointer-events: none;
   }
 
