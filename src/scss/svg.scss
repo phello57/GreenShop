@@ -75,6 +75,11 @@
     height: 12px;
   }
   // === / BLOG ===
+
+  &__delete {
+    width: 22px;
+    height: 22px;
+  }
   // === FOOTER ===
   &__footer-flower1 {
     width: 60px;
@@ -104,7 +109,6 @@
     width: 22px;
     height: 23px;
     fill: $color-main;
-    
   }
   &__facebook {
     position: absolute;

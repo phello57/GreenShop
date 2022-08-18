@@ -4,28 +4,26 @@ var countOfSliders = document.querySelector(".count-of-sliders");
 
 export const slider = {
     index: 0,
-    start: function() {
+    start: function () {
         // запускаем авто-прокрутку слайдера
         let intervalID = setInterval(slider.nextSlide, 3000);
         // создаем пагинацию
-        
         slider.createDots();
         // обновляем массив пагинации
         dots = document.querySelectorAll(".dot");
         // добавляем первой кнопке выделение
         dots[0].classList.add("now-position");
-        const that = this;
         // ловим клик на любую из кнопок 
-        countOfSliders.onclick = function (event) {
+        countOfSliders.onclick = (event) => {
 	    if (event.target.classList[0] != "dot") return; //проверка попадания пагинации
-            that.activeSlide(event.target.id);
+            this.activeSlide(event.target.id);
             clearInterval(intervalID);
         };
     }, 
     // создаем пагинацию в зависимости от кол-ва слайдов
     createDots() {
         for (let i = 0; sliders.length > i; i++) {
-            document.querySelector(".count-of-sliders").innerHTML += 
+            countOfSliders.innerHTML += 
             `<div id="${i}" class="dot some-position"></div>`;
         }
     },

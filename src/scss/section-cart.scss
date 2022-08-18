@@ -1,0 +1,232 @@
+.page-cart {
+  padding-top: 20px;
+  &__nav-wrapper {
+    display: flex;
+    padding-bottom: 30px;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  &__table-wrapper {
+    display: flex;
+    margin-right: 86px;
+    flex-direction: column;
+  }
+  &__table-titles {
+    display: flex;
+    
+    border-bottom: 1px solid $color-main;
+    padding-bottom: 11px;
+  }
+}
+.table-titles {
+  
+  &__prod {
+    width: 305px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &__price {
+    width: 145px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &__quantity {
+    width: 162px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  &__total {
+    padding-right: 97px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+.cart {
+  &__wrapper {
+    display: flex;
+    background-color: #FBFBFB;
+    width: 782px;
+    height: 70px;
+    margin-bottom:10px;
+    margin-top:10px;
+  }
+  &__prod-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 6px;
+    text-decoration: none;
+    &:hover {
+      @include hoverLink
+    }
+  }
+  &__quantity {
+    width: 20px;
+    margin: 0 5px;
+    text-align: center;
+    overflow: hidden;
+  }
+  &__product-img {
+    width: 70px;
+    height: 70px;
+  }
+  &__info-wrapper {
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 14px;
+  }
+  &__prod-sku-wrapper {
+    display: flex;
+  }
+  &__prod-sku-title {
+    color: #A5A5A5;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__prod-sku {
+    margin-left: 5px;
+  }
+  &__price {
+    width: 145px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  &__quantity-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__total {
+    margin-left: 72px;
+    display: flex;
+    align-items: center;
+    width: 110px;
+    font-weight: 700;
+    color: $color-main;
+    overflow: hidden;
+  }
+}
+
+.calculate-cost {
+  display: flex;
+  flex-direction: column;
+  width: 332px;
+  &__title {
+    width: auto;
+    border-bottom: 1px solid $color-main;
+    padding-bottom: 11px;
+    margin-bottom: 11px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  &__coupon-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 8px;
+  }
+  &__input-wrapper {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  &__input {
+    border: 1px solid $color-main;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 15px;
+      color: #A5A5A5;
+    }
+  }
+  &__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  &__subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  &__coupon {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+  }
+  &__shiping {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  &__shiping-charge {
+    width: auto;
+    display: block;
+    text-align: end;
+    margin-bottom: 26px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $color-main;
+    text-decoration: none;
+    &:hover {
+      @include hoverLink
+    }
+  }
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 29px;
+  }
+  &__price {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  &__total-subtitle {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  &__total-price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 16px;
+    color: $color-main;
+  }
+
+
+  &__btn-wrapper {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__shoping-again {
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    color: $color-main;
+    text-decoration: none;
+    &:hover {
+      @include hoverLink
+    }
+  }
+}

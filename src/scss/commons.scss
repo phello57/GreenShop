@@ -5,7 +5,9 @@ body {
   font-family: CeraPro, sans-serif;
   overflow-x: hidden;
 }
-
+a {
+  color: #3d3d3d;
+}
 .disable {
   position: absolute !important;
   visibility: hidden !important;
@@ -80,12 +82,20 @@ body {
     font-weight: 400;
     font-size: 28px;
     color: #fff;
-
+    &-resize {
+      width: 25px;
+      height: 25px;
+      font-size: 20px;
+      line-height: 24px;
+    }
     &:hover {
       @include hoverBtn;
     }
   }
-
+  &__delete {
+    border: none;
+    background-color: #FBFBFB;
+  }
   &__full-description {
     border: none;
     background-color: #fff;
@@ -99,6 +109,7 @@ body {
   }
 
   &__full-reviews {
+    display: flex;
     border: none;
     background-color: #fff;
     color: #3d3d3d;
@@ -108,7 +119,19 @@ body {
     padding-bottom: 13px;
     cursor: pointer;
   }
-
+  &__requisites-of-bank-card {
+    background-color: $color-main;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 16px;
+    &:hover {
+      @include hoverBtn
+    }
+  }
   &__buyNow {
     height: 40px;
     width: 130px;

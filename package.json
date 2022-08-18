@@ -10,7 +10,7 @@
     "dev": "gulp",
     "svgSprive": "gulp svgSprive"
   },
-  "author": "phello57",
+  "author": "artem",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.27.10",
@@ -41,10 +41,21 @@
     "gulp-webp-html-nosvg": "^1.1.1",
     "gulp-webpcss": "^1.1.1",
     "newer": "^0.1.5",
+    "node-polyfill-webpack-plugin": "^2.0.1",
     "sass": "^1.52.3",
+    "sql": "^0.78.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "swiper": "^8.2.4",
+    "tedious": "^15.0.1",
+    "util": "^0.12.4",
     "webp-converter": "^2.2.3",
-    "webpack": "^5.73.0",
+    "webpack": "^5.74.0",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "crypto-browserify": "^3.12.0",
+    "mssql": "^9.0.0",
+    "os-browserify": "^0.3.0",
+    "url": "^0.11.0"
   }
 }

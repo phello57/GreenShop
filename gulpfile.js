@@ -1,3 +1,4 @@
+
 import gulp from "gulp";
 import { path } from "./gulp/config/path.js";
 import { plugins } from "./gulp/config/plugins.js"
@@ -24,12 +25,10 @@ function watcher() {
   gulp.watch(path.watch.scss, scss);
   gulp.watch(path.watch.js, js);
   gulp.watch(path.watch.images, images);
-  //gulp.watch(path.watch.svgSprive, svgSprive);
 };
 
 
-// export { svgSprive }
-const fonts = gulp.series(otfToTtf,ttfToWoff,fontsStyle)
+const fonts = gulp.series(ttfToWoff,fontsStyle)
 
 const mainTasks = gulp.series(fonts, gulp.parallel(copy, html, scss, js, images,svgSprive));
 

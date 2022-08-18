@@ -1,7 +1,7 @@
 @import "reset.scss";
-@import "fonts.scss";
-@import "mixins.scss";
 @import "vars.scss";
+@import "mixins.scss";
+@import "fonts.scss";
 @import "commons.scss";
 
 @import "svg.scss";
@@ -12,7 +12,9 @@
 @import "section-product-card.scss";
 @import "section-blog.scss";
 @import "section-page-product.scss";
+@import "section-cart.scss";
 
 @import "footer.scss";
 @import "keyframes.scss";
+
 @import "media.scss";

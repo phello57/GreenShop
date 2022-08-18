@@ -3,3 +3,7 @@
   transition: $transition;
   color: #fff;
 }
+@mixin hoverLink {
+  color: $color-hover;
+  transition: $transition;
+}

@@ -7,27 +7,27 @@ header.section-outer.section-header
       nav.menu
         ul.menu__list
           li.menu__list-item
-            a.menu__list-link.active__link(href="#") Home
+            a.menu__list-link.js__menu-list__home.active__link(href="index.html") Home
           li.menu__list-item
-            a.menu__list-link(href="product-vie.html") Shop
+            a.menu__list-link.js__menu-list__shop(href="page-product-vie.html") Shop
           li.menu__list-item
-            a.menu__list-link(href="#") Plant Care
+            a.menu__list-link.js__menu-list__plant-care(href="page-cart.html") Plant Care
           li.menu__list-item 
-            a.menu__list-link(href="#") Blogs
+            a.menu__list-link.js__menu-list__blogs(href="#") Blogs
       .icons
         a.logo-mini(href="#")
           svg.svg__logo-mini
             use(aria-label="greenshop" xlink:href="images/icons/icons.svg#logo-mini")
         div.plants-search__wrapper
-          button.btn__search-find-request
+          button.btn-js__search-find-request
             svg.svg__search-find-request
               use(aria-label="search" xlink:href="images/icons/icons.svg#search-find-request")
           form(action="text")
             input.plants-search__input(type="text" placeholder="Find your plants")
-        button.btn__search-input-open
+        button.btn__search-input-open.btn-js__search-input-open
           svg.svg__search
             use(aria-label="search" xlink:href="images/icons/icons.svg#search")
-        button.btn__hamburger-menu
+        button.btn__hamburger-menu.btn-js__hamburger-menu
           svg.svg__hamburger-menu
             use(aria-label="hamburger-menu" xlink:href="images/icons/icons.svg#hamburger-menu")
         button.btn__market-cart
@@ -43,7 +43,7 @@ header.section-outer.section-header
           a.logo-burger(href="#")
             svg.svg__logo-burger
               use(aria-label="greenshop" xlink:href="images/icons/icons.svg#logo-mini")
-          button.btn__hamburger-exit
+          button.btn-js__hamburger-exit
             svg.svg__hamburger-exit
               use(aria-label="autorisation" xlink:href="images/icons/icons.svg#exit")
         nav.hamburger-menu__wrapper
