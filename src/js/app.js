@@ -8,16 +8,20 @@ import * as sql from "./modules/sql.js";
 import * as shopCalc from "./modules/shop-calculate.js";
 import * as range from "./modules/input-range.js";
 import * as burgerMenu from "./modules/burger.js";
-import * as iconsInnerCard from "./modules/icons-inner-img.js";
+webp.isWebP; 
+
+const fileName = document.location.pathname
+
+if (fileName === "/page-cart.html") {
+  shopCalc.shopCalc.start()
+} else if (fileName === "/page-product-vie.html") {
+  prodVie.slider.start()
+  prodVie.description.start()
+} else if (fileName === "/index.html") {
+  
+  mySlider.slider.start() 
+}
 
 
-webp.isWebP();
-shopCalc.shopCalc.start()
 
-
-mySlider.slider.start() 
-
-prodVie.description.start()
-
-prodVie.slider.start()
 
