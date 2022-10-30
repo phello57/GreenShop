@@ -5,6 +5,12 @@
     display: flex;
     flex-direction: row;
   }
+  &__input {
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+    width: 360px;
+    padding: .5rem 1rem;
+  }
 }
 
 .filter-list {
@@ -34,10 +40,7 @@
     text-decoration: none;
   }
 
-  &__item {
-    font-size: 15px;
-    line-height: 40px;
-  }
+  
 }
 
 .sell-out-card {
@@ -92,8 +95,17 @@
   }
 
   &__cost-wrapper {
+    display: flex;
     padding: 16px 0 16px 30px;
   }
+  &__vie-cost {
+    margin-left: 10px;
+    font-size: 17px;
+    text-decoration: double;
+    color: #46a358;
+    
+  }
+  
 }
 
 // === INPUT ===
@@ -258,10 +270,18 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
     position: relative;
     width: 258px;
     height: 300px;
-    //background: #fbfbfb;
-    background: #ff6d6d;
+    background: #fbfbfb;
+    
   }
+  &__category-name {
+    margin-top: 5px;
+    border: 1px solid #a5a5a5;
+    background-color: #8aa78f;
+    border-radius: 30px;
+    padding: 2px 6px;
+    display: inline-block;
 
+  }
   &__name {
     display: block;
     padding-top: 12px;
@@ -283,6 +303,8 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
   }
 
   &__sale {
+    margin-top: 3px;
+    display: flex;
     color: #a5a5a5;
     text-decoration: line-through;
   }
@@ -302,15 +324,33 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
     background-color: $color-main;
     color: #fff;
   }
+  &__card-new {
+    position: absolute;
+    top: 43px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    background-color: #a39d46;
+    color: #fff;
+  }
+  &__icons-inner-img {
+    left: 70px;
+    bottom: 10px;
+    visibility: hidden;
+    position: absolute;
+  }
 }
-
 .icons-inner-img {
-  visibility: hidden;
-  position: absolute;
   display: flex;
   width: 125px;
   bottom: 5%;
-  left: 30%;
+  left: 10%;
 
   &__item {
     display: flex;
@@ -320,12 +360,18 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
     width: 35px;
     height: 35px;
     border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    &:hover {
+      background-color: #b8b7b7;
+    }
   }
 
   &__item + &__item {
     margin-left: 10px;
   }
 }
+
 
 .icons-inner-img:hover {
 }
