@@ -5,7 +5,7 @@ export const countCategories = [
   },
   {
     kind: "Potter Plants",
-    count: 1,
+    count: 5,
   },
   {
     kind: "Seeds",

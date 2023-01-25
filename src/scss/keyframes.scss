@@ -1,5 +1,23 @@
 // === showcase ===
 // при наведении на товар появляются иконки
+.css-icons-inner-img {
+  display: table;
+}
+
+.css-icons-inner-img span {
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: inline-block;
+  margin: -3px;
+  padding: 5px;
+  width: 19px;
+  height: 19px;
+  text-align: center;
+}
+
+.css-icons-inner-img:hover > span svg {
+  animation: 1500ms ease 0s normal none 1 running pulse;
+}
 @keyframes iconsUp {
   0% {
     bottom: -10px;
@@ -29,3 +47,38 @@
     opacity: 1;
   }
 }
+@keyframes pulse {
+  0% {
+      transform: scaleX(1) scaleY(1);
+  }
+  10% {
+      transform: scaleX(0.85) scaleY(0.85);
+  }
+  20% {
+      transform: scaleX(1) scaleY(1);
+  }
+  30% {
+      transform: scaleX(0.85) scaleY(0.85);
+  }
+  40% {
+      transform: scaleX(1) scaleY(1);
+  }
+  50% {
+      transform: scaleX(0.85) scaleY(0.85);
+  }
+  60% {
+      transform: scaleX(1) scaleY(1);
+  }
+  70% {
+      transform: scaleX(0.85) scaleY(0.85);
+  }
+  80% {
+      transform: scaleX(1) scaleY(1);
+  }
+  90% {
+      transform: scaleX(0.85) scaleY(0.85);
+  }
+  100% {
+      transform: scaleX(1) scaleY(1);
+  }
+  }

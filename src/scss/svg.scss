@@ -53,9 +53,14 @@
     height: 18px;
     transform: rotate(-90deg);
   }
+
   &__like {
-    width: 26px;
-    height: 24px;
+    width: 18px;
+    height: 20px;
+  }
+  &__redHeart {
+    width: 18px;
+    height: 20px;
   }
 
   // === /showcase ===

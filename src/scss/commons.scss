@@ -223,10 +223,16 @@ a {
   }
 
   &__market-cart {
+    width: 15px;
+    height: 15px;
     border: none;
+    margin-left: 15px;
     background-color: white;
     cursor: pointer;
     position: relative;
+    :hover {
+      fill: red;
+    }
   }
 
   &__hamburger-menu {

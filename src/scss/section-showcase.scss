@@ -359,11 +359,13 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
     background-color: #fff;
     width: 35px;
     height: 35px;
-    border-radius: 5px;
+    border-radius: 4px ;
     cursor: pointer;
     border: none;
+    border-bottom: 3px solid white;
     &:hover {
-      background-color: #b8b7b7;
+      transition: $transition;
+      border-bottom: 3px solid green;
     }
   }
 
@@ -380,7 +382,7 @@ input[type="range"].styled-slider.slider-progress::-ms-fill-lower {
   &__wrapper {
     display: flex;
     justify-content: end;
-    padding-top: 90px;
+    padding-top: 250px;
   }
 
   &__item {

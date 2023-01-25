@@ -1,10 +1,10 @@
 export class ProductService {
   constructor(products = []) {
-    (this.products = products), (this.pageOfProduct = {});
+    (this.products = products), (this.idOfProduct = {});
   }
   // return 1 товар
   findProductById(id = "") {
-    return this.products[id];
+    return this.products[id - 1];
   }
   // return [...]
   filterByType(type = "") {

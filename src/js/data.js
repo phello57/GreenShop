@@ -1,53 +1,57 @@
 export const data = [
   {
     id: 1,
-    title: "Barberton Daisy",
-    price: 199.0,
-    image: "https://i.ibb.co/4dGLD23/image1.webp",
-    category: "House plants",
-    sizes: ["S", "M", "L", "XL"],
-    sale: "",
-    newPrice: "",
-    new: true,
-    shortDescription:
-      "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.",
-    sku: "1995751877966",
-    tags: ["Home", "Garden", "Plants"],
-    longDescription:
-      "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.",
-  },
-  {
-    id: 2,
     title: "Angel Wing Begonia",
     price: 420.0,
     image: "https://i.ibb.co/ngtHFKd/image2.webp",
     category: "Small Plants",
-    size: ["S", "M", "L", "XL"],
+    sizes: "S, M, L, XL",
     sale: "",
-    newPrice: "",
+    oldPrice: "",
     new: false,
     shortDescription:
       "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.",
     sku: "1995751877966",
-    tags: ["Home", "Garden", "Plants"],
-    longDescription:
+    tags: "Home, Garden, Plants",
+    fullDescription:
       "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.",
   },
+
+  {
+    id: 2,
+    title: "African Violet",
+    price: 495.0,
+    image: "https://i.ibb.co/NxFNtcM/image5.webp",
+    category: "Potter Plants",
+    sizes: "S, M, L",
+    sale: "10",
+    oldPrice: "550",
+    new: false,
+    countOfCustomersReview: "10",
+    shortDescription:
+      "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.",
+    sku: "1995751877966",
+    tags: "Home",
+    fullDescription:
+      "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.",
+  },
+
   {
     id: 3,
     title: "Aluminum Plant",
     price: 800.0,
     image: "https://i.ibb.co/NSx05JL/image3.webp",
     category: "Accessories",
-    size: ["S", "M", "XL"],
+    sizes: "S, M, XL",
     sale: "20",
     oldPrice: "1000",
     new: true,
+    countOfCustomersReview: "10",
     shortDescription:
-      "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.",
+      "The ceramic cylinder planters come with a wooden stand to help elevate your plants. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.",
     sku: "1995751877966",
-    tags: ["Home", "Garden", "Plants"],
-    longDescription:
+    tags: "Home, Garden, Plants",
+    fullDescription:
       "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.",
   },
   {
@@ -56,15 +60,16 @@ export const data = [
     price: 600.0,
     image: "https://i.ibb.co/Btmc2H5/image6.webp",
     category: "Trerrariums",
-    size: ["S", "M"],
+    sizes: "S, M, L, XL",
     sale: "",
-    newPrice: "",
+    oldPrice: "",
     new: true,
+    countOfCustomersReview: "10",
     shortDescription:
       "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.",
     sku: "1995751877966",
-    tags: ["Home", "Garden", "Plants"],
-    longDescription:
+    tags: "Home, Garden, Plants",
+    fullDescription:
       "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.",
   },
   {
@@ -73,15 +78,88 @@ export const data = [
     price: 1000.0,
     image: "https://i.ibb.co/4jbdBdN/image8.webp",
     category: "Potter Plants",
-    size: ["XL"],
+    sizes: "S, M, L",
     sale: "",
-    newPrice: "",
+    oldPrice: "",
     new: true,
+    countOfCustomersReview: "10",
     shortDescription:
       "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.",
     sku: "1995751877966",
-    tags: ["Home", "Garden", "Plants"],
-    longDescription:
+    tags: "Home, Garden, Plants",
+    fullDescription:
+      "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.",
+  },
+  {
+    id: 6,
+    title: "Blushing Bromeliad",
+    price: 300.0,
+    image: "https://i.ibb.co/q7YGM5T/image1.webp",
+    category: "Potter Plants",
+    sizes: "S, M, L",
+    sale: "",
+    oldPrice: "",
+    new: true,
+    countOfCustomersReview: "10",
+    shortDescription:
+      "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.",
+    sku: "1995751877966",
+    tags: "Home",
+    fullDescription:
+      "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.",
+  },
+  {
+    id: 7,
+    title: "Beach Spider Lily",
+    price: 800.0,
+    image: "https://i.ibb.co/2kxCTZm/image4.webp",
+    category: "Potter Plants",
+    sizes: "S, M, L",
+    sale: "",
+    oldPrice: "",
+    new: true,
+    countOfCustomersReview: "10",
+    shortDescription:
+      "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.",
+    sku: "1995751877966",
+    tags: "Home",
+    fullDescription:
+      "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.",
+  },
+  {
+    id: 8,
+    title: "Barberton Daisy",
+    price: 199.0,
+    image: "https://i.ibb.co/4dGLD23/image1.webp",
+    category: "House plants",
+    sizes: "S, M, L, XL",
+    sale: "",
+    oldPrice: "",
+    new: true,
+    countOfCustomersReview: "10",
+    shortDescription:
+      "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.",
+    sku: "1995751877966",
+    tags: "Home, Garden, Plants",
+    fullDescription:
+      "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.",
+  },
+  {
+    id: 9,
+    title: "African Violet",
+    price: 700,
+    image: "https://i.ibb.co/BfcFML3/image7.webp",
+    category: "Potter Plants",
+    sizes: "S, M, L",
+    sale: "",
+    oldPrice: "",
+    new: false,
+    countOfCustomersReview: "10",
+    shortDescription:
+      "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground.",
+    sku: "1995751877966",
+    tags: "Home",
+    fullDescription:
       "The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. The ceramic cylinder planters come with a wooden stand to help elevate your plants off the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla augue nec est tristique auctor. Donec non est at libero vulputate rutrum. Morbi ornare lectus quis justo gravida semper. Nulla tellus mi, vulputate adipiscing cursus eu, suscipit id nulla.",
   },
 ];

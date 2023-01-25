@@ -21,9 +21,12 @@ const inputPriceRange = document.querySelector(".js-input-filter-by-price");
 
 const btnsFilter = document.querySelector(".js-showcase__categories");
 
+const shopingCartWrapper = document.querySelector(".js-market-cart-wrapper");
+
 // *файлы не приходят с бека, хранятся в папке проекта
 // data - данные, пришедшие с бека. Попадают, фильтруются в ProductService
 export const productService = new ProductService(data);
+console.log(productService);
 // countCategories - еще один файл приходящий с бека, хранит количество товаров по категориям
 const categoryService = new ProductService(countCategories);
 // htmlRender содержит форму верски карточки товара и категории. Отвечает только за отрисовку или очистку контейнера
@@ -65,6 +68,13 @@ function renderCategories() {
   );
   listenerForCategories();
 }
+function reRenderShopCartIcon() {
+  const countInShopCart = localStorage
+    .getItem("idsForShopCart")
+    .split("").length;
+  shopingCartWrapper.innerHTML =
+    htmlRender.paintShopingCartIcon(countInShopCart);
+}
 
 // Hidden buttons
 function listenerForHiddenBtns() {
@@ -79,11 +89,25 @@ function listenerForHiddenBtns() {
       const btnViewMore = target.classList.contains(
         "js-icon-inner-img__viewMore"
       );
+
       if (!target) return;
 
       if (btnAddToCart) {
-        let targetId = event.target.closest(".js-slot__wrapper").dataset.id;
-        console.log("addToCart");
+        let newId = event.target.closest(".js-slot__wrapper").dataset.id;
+        let oldIdsForShopCart = localStorage.getItem("idsForShopCart");
+
+        switch (true) {
+          case Boolean(oldIdsForShopCart):
+            let allIds = oldIdsForShopCart + newId;
+            window.localStorage.removeItem("idsForShopCart");
+            window.localStorage.setItem("idsForShopCart", allIds);
+            reRenderShopCartIcon();
+            break;
+          case !Boolean(oldIdsForShopCart):
+            window.localStorage.setItem("idsForShopCart", newId);
+            reRenderShopCartIcon();
+            break;
+        }
       }
       if (btnLike) {
         let targetId = event.target.closest(".js-slot__wrapper").dataset.id;
@@ -91,15 +115,18 @@ function listenerForHiddenBtns() {
       }
       if (btnViewMore) {
         let targetId = event.target.closest(".js-slot__wrapper").dataset.id;
-        productService.pageOfProduct = productService.findProductById(targetId);
-        console.log(targetId);
-        //window.open("page-product-vie.html");
+        productService.idOfProduct = productService.findProductById(targetId);
+        localStorage.setItem(
+          "renderObject",
+          JSON.stringify(productService.idOfProduct)
+        );
+        window.open("page-product-vie.html");
       }
     });
   });
 }
 
-// mouse over
+// mouseOver\leave on card of product
 function listenerForMouseover() {
   const carts = [...document.getElementsByClassName("js-slot__wrapper")];
   carts.forEach((item) => {
