@@ -1,4 +1,4 @@
-https://phello57.github.io/greenshop.github.io/
+https://phello57.github.io/greenshop2.github.io/
 
 ## Что есть
 Страницы Home, Shop(пример карточки товара), Plant Care(корзина)
