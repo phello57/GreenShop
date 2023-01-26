@@ -3,23 +3,27 @@ import { ProductService } from "./modules/ProductService.js";
 
 const shopingCartWrapper = document.querySelector(".js-market-cart-wrapper");
 const renderCartIcon = new HTMLService();
+shopingCartWrapper.innerHTML =
+  renderCartIcon.paintShopingCartIcon(countInShopCart);
 const countInShopCart = localStorage
   .getItem("idsForShopCart")
   ?.split("").length;
-shopingCartWrapper.innerHTML =
-  renderCartIcon.paintShopingCartIcon(countInShopCart);
-
 shopingCartWrapper.addEventListener("click", () => {
   console.log("hi");
 });
 const fileName = document.location.pathname;
-if (fileName === "/index.html") {
+console.log(fileName);
+
+const frontPage = document.querySelector(".price-range");
+const cardPage = document.querySelector(".product-card");
+const productPage = document.querySelector(".page-product__wrapper");
+if (frontPage !== null) {
   indexHtml();
 }
-if (fileName === "/page-product-vie.html") {
+if (productPage !== null) {
   pageProdView();
 }
-if (fileName === "/page-cart.html") {
+if (cardPage !== null) {
   pageCart();
 }
 
